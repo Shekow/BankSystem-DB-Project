@@ -34,6 +34,15 @@ namespace DatabaseProject
             dbAccess.readDatathroughAdapter(query, dtUsers);
             if (dtUsers.Rows.Count == 1)
             {
+                HomePage.user.SSN = dtUsers.Rows[0]["SSN"].ToString();
+                HomePage.user.FirstName = dtUsers.Rows[0]["FirstName"].ToString();
+                HomePage.user.SecondName = dtUsers.Rows[0]["SecondName"].ToString();
+                HomePage.user.LastName = dtUsers.Rows[0]["LastName"].ToString();
+                HomePage.user.BuildingNumber = Convert.ToInt32(dtUsers.Rows[0]["BuildingNumber"].ToString());
+                HomePage.user.Street = dtUsers.Rows[0]["Street"].ToString();
+                HomePage.user.City = dtUsers.Rows[0]["City"].ToString();
+                HomePage.user.Country = dtUsers.Rows[0]["Country"].ToString();
+                HomePage.user.Type = dtUsers.Rows[0]["Type"].ToString();
                 MessageBox.Show("You successfully logged in");
                 dbAccess.closeConn();
                 this.Hide();

@@ -12,9 +12,15 @@ namespace DatabaseProject
 {
     public partial class HomePage : Form
     {
+        public static User user = new User();
         public HomePage()
         {
             InitializeComponent();
+        }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

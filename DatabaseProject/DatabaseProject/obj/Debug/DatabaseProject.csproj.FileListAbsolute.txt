@@ -9,3 +9,4 @@ C:\Users\sheko\source\repos\DatabaseProject\DatabaseProject\obj\Debug\DatabasePr
 C:\Users\sheko\source\repos\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.exe
 C:\Users\sheko\source\repos\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.pdb
 C:\Users\sheko\source\repos\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.Login.resources
+C:\Users\sheko\source\repos\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.HomePage.resources

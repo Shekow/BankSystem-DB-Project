@@ -51,6 +51,15 @@ namespace DatabaseProject
             int row = dbAccess.executeQuery(cmd);
             if (row == 1)
             {
+                HomePage.user.SSN = SSN;
+                HomePage.user.FirstName = FirstName;
+                HomePage.user.SecondName = SecondName;
+                HomePage.user.LastName = LastName;
+                HomePage.user.BuildingNumber = BuildingNumber;
+                HomePage.user.Street = Street;
+                HomePage.user.City = City;
+                HomePage.user.Country = Country;
+                HomePage.user.Type = Type;
                 MessageBox.Show("Account created successfully");
                 this.Hide();
                 HomePage homePage = new HomePage();
