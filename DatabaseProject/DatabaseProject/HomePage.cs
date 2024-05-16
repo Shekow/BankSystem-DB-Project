@@ -22,5 +22,11 @@ namespace DatabaseProject
         {
 
         }
+
+        private void UpdateProfileButton_Click(object sender, EventArgs e)
+        {
+            UpdateUserForm updateUserForm = new UpdateUserForm();
+            updateUserForm.ShowDialog();
+        }
     }
 }

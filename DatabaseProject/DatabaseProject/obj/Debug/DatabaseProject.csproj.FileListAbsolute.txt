@@ -10,3 +10,16 @@ C:\Users\sheko\source\repos\DatabaseProject\DatabaseProject\obj\Debug\DatabasePr
 C:\Users\sheko\source\repos\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.pdb
 C:\Users\sheko\source\repos\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.Login.resources
 C:\Users\sheko\source\repos\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.HomePage.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe.config
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.pdb
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.csproj.AssemblyReference.cache
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.HomePage.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.Login.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.Properties.Resources.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.SignUpForm.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.UpdateUserForm.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.csproj.GenerateResource.cache
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.csproj.CoreCompileInputs.cache
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.exe
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.pdb

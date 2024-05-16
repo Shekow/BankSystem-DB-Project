@@ -55,6 +55,7 @@ namespace DatabaseProject
                 HomePage.user.FirstName = FirstName;
                 HomePage.user.SecondName = SecondName;
                 HomePage.user.LastName = LastName;
+                HomePage.user.Password = Password;
                 HomePage.user.BuildingNumber = BuildingNumber;
                 HomePage.user.Street = Street;
                 HomePage.user.City = City;

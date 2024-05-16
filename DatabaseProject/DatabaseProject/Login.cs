@@ -38,6 +38,7 @@ namespace DatabaseProject
                 HomePage.user.FirstName = dtUsers.Rows[0]["FirstName"].ToString();
                 HomePage.user.SecondName = dtUsers.Rows[0]["SecondName"].ToString();
                 HomePage.user.LastName = dtUsers.Rows[0]["LastName"].ToString();
+                HomePage.user.Password = dtUsers.Rows[0]["Password"].ToString();
                 HomePage.user.BuildingNumber = Convert.ToInt32(dtUsers.Rows[0]["BuildingNumber"].ToString());
                 HomePage.user.Street = dtUsers.Rows[0]["Street"].ToString();
                 HomePage.user.City = dtUsers.Rows[0]["City"].ToString();
@@ -51,7 +52,7 @@ namespace DatabaseProject
             }
             else
             {
-                MessageBox.Show("Error: something went wrong");
+                MessageBox.Show("Invalid SSN/password");
             }
         }
 

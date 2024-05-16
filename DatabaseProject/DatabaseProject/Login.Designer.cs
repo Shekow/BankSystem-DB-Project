@@ -103,9 +103,9 @@
             this.label5.ForeColor = System.Drawing.Color.Blue;
             this.label5.Location = new System.Drawing.Point(481, 387);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 29);
+            this.label5.Size = new System.Drawing.Size(99, 29);
             this.label5.TabIndex = 27;
-            this.label5.Text = "Register";
+            this.label5.Text = "Sign Up";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label3
