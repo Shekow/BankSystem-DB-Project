@@ -41,7 +41,7 @@
             this.Type = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtSecondName = new System.Windows.Forms.TextBox();
+            this.txtMiddleName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtSSN = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -112,9 +112,9 @@
             this.SecondName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SecondName.Location = new System.Drawing.Point(54, 183);
             this.SecondName.Name = "SecondName";
-            this.SecondName.Size = new System.Drawing.Size(167, 29);
+            this.SecondName.Size = new System.Drawing.Size(158, 29);
             this.SecondName.TabIndex = 5;
-            this.SecondName.Text = "Second Name";
+            this.SecondName.Text = "Middle Name";
             // 
             // Street
             // 
@@ -184,13 +184,13 @@
             this.txtFirstName.Size = new System.Drawing.Size(310, 34);
             this.txtFirstName.TabIndex = 12;
             // 
-            // txtSecondName
+            // txtMiddleName
             // 
-            this.txtSecondName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecondName.Location = new System.Drawing.Point(251, 183);
-            this.txtSecondName.Name = "txtSecondName";
-            this.txtSecondName.Size = new System.Drawing.Size(310, 34);
-            this.txtSecondName.TabIndex = 13;
+            this.txtMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMiddleName.Location = new System.Drawing.Point(251, 183);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.Size = new System.Drawing.Size(310, 34);
+            this.txtMiddleName.TabIndex = 13;
             // 
             // txtLastName
             // 
@@ -321,7 +321,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtSSN);
             this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.txtSecondName);
+            this.Controls.Add(this.txtMiddleName);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Type);
@@ -357,7 +357,7 @@
         private System.Windows.Forms.Label Type;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TextBox txtSecondName;
+        private System.Windows.Forms.TextBox txtMiddleName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtSSN;
         private System.Windows.Forms.TextBox txtPassword;

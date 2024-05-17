@@ -21,13 +21,13 @@ namespace DatabaseProject
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             String FirstName = txtFirstName.Text;
-            String SecondName = txtSecondName.Text;
+            String MiddleName = txtMiddleName.Text;
             String LastName = txtLastName.Text;
             String SSN = txtSSN.Text;
             String Password = txtPassword.Text;
@@ -36,9 +36,24 @@ namespace DatabaseProject
             String Street = txtStreet.Text;
             int BuildingNumber = Convert.ToInt32(txtBuildingNumber.Text);
             String Type = comboType.Text;
-            SqlCommand cmd = new SqlCommand("INSERT INTO [User] VALUES(@SSN, @FirstName, @SecondName, @LastName, @BuildingNumber, @Street, @City, @Country, @Password, @Type)");
+            SqlCommand cmd;
+            if (Type == "Customer")
+            {
+                cmd =
+               new SqlCommand
+               ("INSERT INTO Customer VALUES(@SSN, @FirstName, " +
+               "@MiddleName, @LastName, @BuildingNumber, @Street, @City, @Country, @Password)");
+            }
+            else
+            {
+                cmd =
+               new SqlCommand
+               ("INSERT INTO Employee VALUES(@SSN, @FirstName, " +
+               "@MiddleName, @LastName, @BuildingNumber, @Street, @City, @Country, @Password, @Admin)");
+            }
+
             cmd.Parameters.AddWithValue("@FirstName", FirstName);
-            cmd.Parameters.AddWithValue("@SecondName", SecondName);
+            cmd.Parameters.AddWithValue("@MiddleName", MiddleName);
             cmd.Parameters.AddWithValue("@LastName", LastName);
             cmd.Parameters.AddWithValue("@Password", Password);
             cmd.Parameters.AddWithValue("@SSN", SSN);
@@ -46,14 +61,15 @@ namespace DatabaseProject
             cmd.Parameters.AddWithValue("@City", City);
             cmd.Parameters.AddWithValue("@Street", Street);
             cmd.Parameters.AddWithValue("@BuildingNumber", BuildingNumber);
-            cmd.Parameters.AddWithValue("@Type", Type);
+            if (Type == "Admin") { cmd.Parameters.AddWithValue("@Admin", "True"); }
+            else { cmd.Parameters.AddWithValue("@Admin", "False"); }
 
             int row = dbAccess.executeQuery(cmd);
             if (row == 1)
             {
                 HomePage.user.SSN = SSN;
                 HomePage.user.FirstName = FirstName;
-                HomePage.user.SecondName = SecondName;
+                HomePage.user.MiddleName = MiddleName;
                 HomePage.user.LastName = LastName;
                 HomePage.user.Password = Password;
                 HomePage.user.BuildingNumber = BuildingNumber;
@@ -77,6 +93,11 @@ namespace DatabaseProject
             this.Hide();
             Login loginPage = new Login();
             loginPage.Show();
+        }
+
+        private void SignUpForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

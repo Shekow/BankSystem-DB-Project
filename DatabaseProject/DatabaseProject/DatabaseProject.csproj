@@ -46,6 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankBranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankBranchForm.Designer.cs">
+      <DependentUpon>BankBranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankForm.Designer.cs">
+      <DependentUpon>BankForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerHomePage.Designer.cs">
+      <DependentUpon>CustomerHomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBAccess.cs" />
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
@@ -74,6 +99,18 @@
       <DependentUpon>UpdateUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BankBranchForm.resx">
+      <DependentUpon>BankBranchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BankForm.resx">
+      <DependentUpon>BankForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerHomePage.resx">
+      <DependentUpon>CustomerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>

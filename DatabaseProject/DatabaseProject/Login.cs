@@ -36,7 +36,7 @@ namespace DatabaseProject
             {
                 HomePage.user.SSN = dtUsers.Rows[0]["SSN"].ToString();
                 HomePage.user.FirstName = dtUsers.Rows[0]["FirstName"].ToString();
-                HomePage.user.SecondName = dtUsers.Rows[0]["SecondName"].ToString();
+                HomePage.user.MiddleName = dtUsers.Rows[0]["MiddleName"].ToString();
                 HomePage.user.LastName = dtUsers.Rows[0]["LastName"].ToString();
                 HomePage.user.Password = dtUsers.Rows[0]["Password"].ToString();
                 HomePage.user.BuildingNumber = Convert.ToInt32(dtUsers.Rows[0]["BuildingNumber"].ToString());

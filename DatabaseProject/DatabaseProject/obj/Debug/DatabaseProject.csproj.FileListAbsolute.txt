@@ -23,3 +23,7 @@ C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProj
 C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.csproj.CoreCompileInputs.cache
 C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.exe
 C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.pdb
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.BankBranchForm.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.BankForm.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.AccountForm.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.CustomerHomePage.resources

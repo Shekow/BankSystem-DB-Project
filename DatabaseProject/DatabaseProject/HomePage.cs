@@ -28,5 +28,17 @@ namespace DatabaseProject
             UpdateUserForm updateUserForm = new UpdateUserForm();
             updateUserForm.ShowDialog();
         }
+
+        private void AddBankButton_Click(object sender, EventArgs e)
+        {
+            BankForm bankForm = new BankForm();
+            bankForm.ShowDialog();
+        }
+
+        private void AddBankBranchButton_Click(object sender, EventArgs e)
+        {
+            BankBranchForm bankBranchForm = new BankBranchForm();
+            bankBranchForm.ShowDialog();
+        }
     }
 }

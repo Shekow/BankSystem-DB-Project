@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtBuildingNumber = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
             this.txtStreet = new System.Windows.Forms.TextBox();
             this.txtCountry = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
-            this.txtSecondName = new System.Windows.Forms.TextBox();
+            this.txtMiddleName = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.City = new System.Windows.Forms.Label();
@@ -59,15 +58,6 @@
             this.label1.Size = new System.Drawing.Size(288, 46);
             this.label1.TabIndex = 4;
             this.label1.Text = "Update details";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(405, 370);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 29);
-            this.label4.TabIndex = 46;
             // 
             // txtBuildingNumber
             // 
@@ -117,13 +107,14 @@
             this.txtLastName.Size = new System.Drawing.Size(310, 34);
             this.txtLastName.TabIndex = 38;
             // 
-            // txtSecondName
+            // txtMiddleName
             // 
-            this.txtSecondName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecondName.Location = new System.Drawing.Point(293, 174);
-            this.txtSecondName.Name = "txtSecondName";
-            this.txtSecondName.Size = new System.Drawing.Size(310, 34);
-            this.txtSecondName.TabIndex = 37;
+            this.txtMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMiddleName.Location = new System.Drawing.Point(293, 174);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.Size = new System.Drawing.Size(310, 34);
+            this.txtMiddleName.TabIndex = 37;
+            this.txtMiddleName.TextChanged += new System.EventHandler(this.txtSecondName_TextChanged);
             // 
             // txtFirstName
             // 
@@ -189,9 +180,9 @@
             this.SecondName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SecondName.Location = new System.Drawing.Point(96, 174);
             this.SecondName.Name = "SecondName";
-            this.SecondName.Size = new System.Drawing.Size(167, 29);
+            this.SecondName.Size = new System.Drawing.Size(158, 29);
             this.SecondName.TabIndex = 29;
-            this.SecondName.Text = "Second Name";
+            this.SecondName.Text = "Middle Name";
             // 
             // LastName
             // 
@@ -240,14 +231,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(795, 705);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtBuildingNumber);
             this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtStreet);
             this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.txtSecondName);
+            this.Controls.Add(this.txtMiddleName);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.City);
@@ -270,14 +260,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtBuildingNumber;
         private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.TextBox txtStreet;
         private System.Windows.Forms.TextBox txtCountry;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.TextBox txtSecondName;
+        private System.Windows.Forms.TextBox txtMiddleName;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label City;
