@@ -39,13 +39,15 @@ namespace DatabaseProject
         private void button1_Click(object sender, EventArgs e)
         {
             String BankCode = comboBankCode.Text;
+            String Number = txtNumber.Text;
             String Country = txtCountry.Text;
             String City = txtCity.Text;
             String Street = txtStreet.Text;
             int BuildingNumber = Convert.ToInt32(txtBuildingNumber.Text);
 
-            SqlCommand cmd = new SqlCommand("INSERT INTO [Branch](BankCode, BuildingNumber, Street, City, Country) " +
-                "VALUES(@BankCode, @BuildingNumber, @Street, @City, @Country)");
+            SqlCommand cmd = new SqlCommand("INSERT INTO [Branch](Number, BankCode, BuildingNumber, Street, City, Country) " +
+                "VALUES(@Number, @BankCode, @BuildingNumber, @Street, @City, @Country)");
+            cmd.Parameters.AddWithValue("@Number", Number);
             cmd.Parameters.AddWithValue("@BankCode", BankCode);
             cmd.Parameters.AddWithValue("@BuildingNumber", BuildingNumber);
             cmd.Parameters.AddWithValue("@Street", Street);
