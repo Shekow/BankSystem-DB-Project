@@ -53,6 +53,12 @@
     <Compile Include="AccountForm.Designer.cs">
       <DependentUpon>AccountForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHomePage.Designer.cs">
+      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="BankBranchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,12 @@
     </Compile>
     <Compile Include="EmpForm.Designer.cs">
       <DependentUpon>EmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoanLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanLogs.Designer.cs">
+      <DependentUpon>LoanLogs.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewCustomers.cs">
       <SubType>Form</SubType>
@@ -120,6 +132,9 @@
     <EmbeddedResource Include="AccountForm.resx">
       <DependentUpon>AccountForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminHomePage.resx">
+      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BankBranchForm.resx">
       <DependentUpon>BankBranchForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoanForm.resx">
       <DependentUpon>LoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanLogs.resx">
+      <DependentUpon>LoanLogs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

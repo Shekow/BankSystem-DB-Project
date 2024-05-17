@@ -63,9 +63,15 @@ namespace DatabaseProject
                     CustomerHomePage customerHomePage = new CustomerHomePage();
                     customerHomePage.Show();
                 }
+                else if (HomePage.user.Type == "Employee")
+                {
+                    EmpForm emplyeeHomePage = new EmpForm();
+                    emplyeeHomePage.Show();
+                }
                 else
                 {
-                    MessageBox.Show("Under construction");
+                    AdminHomePage adminHomePage = new AdminHomePage();
+                    adminHomePage.Show();
                 }
             }
             else

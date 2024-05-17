@@ -44,9 +44,7 @@ namespace DatabaseProject
         private void CustomerButton_Click(object sender, EventArgs e)
         {
             user.Type = "Customer";
-            Login login = new Login();
-            this.Hide();
-            login.ShowDialog();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -65,6 +63,22 @@ namespace DatabaseProject
         {
             LoanForm loanForm = new LoanForm();
             loanForm.Show();
+        }
+
+        private void EmployeeButton_Click(object sender, EventArgs e)
+        {
+            user.Type = "Employee";
+            Login login = new Login();
+            this.Hide();
+            login.ShowDialog();
+        }
+
+        private void AdminButton_Click(object sender, EventArgs e)
+        {
+            user.Type = "Admin";
+            Login login = new Login();
+            this.Hide();
+            login.ShowDialog();
         }
     }
 }

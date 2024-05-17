@@ -35,9 +35,8 @@ namespace DatabaseProject
             String City = txtCity.Text;
             String Street = txtStreet.Text;
             int BuildingNumber = Convert.ToInt32(txtBuildingNumber.Text);
-            String Type = comboType.Text;
             SqlCommand cmd;
-            if (Type == "Customer")
+            if (HomePage.user.Type == "Customer")
             {
                 cmd =
                new SqlCommand
@@ -61,7 +60,7 @@ namespace DatabaseProject
             cmd.Parameters.AddWithValue("@City", City);
             cmd.Parameters.AddWithValue("@Street", Street);
             cmd.Parameters.AddWithValue("@BuildingNumber", BuildingNumber);
-            if (Type == "Admin") { cmd.Parameters.AddWithValue("@Admin", "True"); }
+            if (HomePage.user.Type == "Admin") { cmd.Parameters.AddWithValue("@Admin", "True"); }
             else { cmd.Parameters.AddWithValue("@Admin", "False"); }
 
             int row = dbAccess.executeQuery(cmd);
@@ -76,11 +75,23 @@ namespace DatabaseProject
                 HomePage.user.Street = Street;
                 HomePage.user.City = City;
                 HomePage.user.Country = Country;
-                HomePage.user.Type = Type;
                 MessageBox.Show("Account created successfully");
                 this.Hide();
-                HomePage homePage = new HomePage();
-                homePage.Show();
+                if (HomePage.user.Type == "Customer")
+                {
+                    CustomerHomePage customerHomePage = new CustomerHomePage();
+                    customerHomePage.Show();
+                }
+                else if (HomePage.user.Type == "Employee")
+                {
+                    EmpForm emplyeeHomePage = new EmpForm();
+                    emplyeeHomePage.Show();
+                }
+                else
+                {
+                    AdminHomePage adminHomePage = new AdminHomePage();
+                    adminHomePage.Show();
+                }
             }
             else
             {

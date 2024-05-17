@@ -57,6 +57,7 @@
             this.AdminButton.TabIndex = 1;
             this.AdminButton.Text = "Admin";
             this.AdminButton.UseVisualStyleBackColor = true;
+            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
             // 
             // EmployeeButton
             // 
@@ -67,6 +68,7 @@
             this.EmployeeButton.TabIndex = 2;
             this.EmployeeButton.Text = "Employee";
             this.EmployeeButton.UseVisualStyleBackColor = true;
+            this.EmployeeButton.Click += new System.EventHandler(this.EmployeeButton_Click);
             // 
             // label1
             // 
