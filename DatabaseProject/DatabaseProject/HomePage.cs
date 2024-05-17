@@ -60,5 +60,11 @@ namespace DatabaseProject
             BankBranchForm bankBranchForm = new BankBranchForm();
             bankBranchForm.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            LoanForm loanForm = new LoanForm();
+            loanForm.Show();
+        }
     }
 }

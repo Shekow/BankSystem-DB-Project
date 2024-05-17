@@ -27,3 +27,4 @@ C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProj
 C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.BankForm.resources
 C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.AccountForm.resources
 C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.CustomerHomePage.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.LoanForm.resources

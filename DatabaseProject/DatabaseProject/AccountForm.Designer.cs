@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(67, 193);
+            this.label1.Location = new System.Drawing.Point(67, 237);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 29);
             this.label1.TabIndex = 3;
@@ -52,7 +52,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(368, 122);
+            this.label3.Location = new System.Drawing.Point(67, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(181, 29);
             this.label3.TabIndex = 5;
@@ -64,15 +64,15 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(67, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 29);
+            this.label4.Size = new System.Drawing.Size(132, 29);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Bank";
+            this.label4.Text = "Bank Code";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(215, 41);
+            this.label5.Location = new System.Drawing.Point(85, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(269, 46);
             this.label5.TabIndex = 72;
@@ -82,9 +82,9 @@
             // 
             this.comboBranchNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBranchNumber.FormattingEnabled = true;
-            this.comboBranchNumber.Location = new System.Drawing.Point(555, 122);
+            this.comboBranchNumber.Location = new System.Drawing.Point(254, 182);
             this.comboBranchNumber.Name = "comboBranchNumber";
-            this.comboBranchNumber.Size = new System.Drawing.Size(120, 33);
+            this.comboBranchNumber.Size = new System.Drawing.Size(134, 33);
             this.comboBranchNumber.TabIndex = 73;
             // 
             // comboType
@@ -94,7 +94,7 @@
             this.comboType.Items.AddRange(new object[] {
             "Personal",
             "Commercial"});
-            this.comboType.Location = new System.Drawing.Point(155, 193);
+            this.comboType.Location = new System.Drawing.Point(156, 237);
             this.comboType.Name = "comboType";
             this.comboType.Size = new System.Drawing.Size(148, 33);
             this.comboType.TabIndex = 74;
@@ -103,16 +103,16 @@
             // 
             this.comboBankCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBankCode.FormattingEnabled = true;
-            this.comboBankCode.Location = new System.Drawing.Point(155, 122);
+            this.comboBankCode.Location = new System.Drawing.Point(205, 122);
             this.comboBankCode.Name = "comboBankCode";
-            this.comboBankCode.Size = new System.Drawing.Size(187, 33);
+            this.comboBankCode.Size = new System.Drawing.Size(183, 33);
             this.comboBankCode.TabIndex = 75;
             this.comboBankCode.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // RequestLoanButton
             // 
             this.RequestLoanButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RequestLoanButton.Location = new System.Drawing.Point(563, 249);
+            this.RequestLoanButton.Location = new System.Drawing.Point(276, 320);
             this.RequestLoanButton.Name = "RequestLoanButton";
             this.RequestLoanButton.Size = new System.Drawing.Size(112, 45);
             this.RequestLoanButton.TabIndex = 76;
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 387);
+            this.ClientSize = new System.Drawing.Size(456, 387);
             this.Controls.Add(this.RequestLoanButton);
             this.Controls.Add(this.comboBankCode);
             this.Controls.Add(this.comboType);

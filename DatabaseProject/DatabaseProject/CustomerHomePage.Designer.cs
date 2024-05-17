@@ -40,9 +40,8 @@
             this.AccountBranchNumberLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboLoans = new System.Windows.Forms.ComboBox();
+            this.comboLoanType = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.LoanNumber = new System.Windows.Forms.Label();
             this.txtAmount = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.RequestLoanButton = new System.Windows.Forms.Button();
@@ -50,6 +49,9 @@
             this.AccountTypeLabel = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.AddAccountButton = new System.Windows.Forms.Button();
+            this.comboLoanNumber = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.AccountPendingBalanceLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboAccounts
@@ -86,11 +88,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(418, 234);
+            this.label2.Location = new System.Drawing.Point(416, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 29);
+            this.label2.Size = new System.Drawing.Size(210, 29);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Balance: ";
+            this.label2.Text = "Avaialble Balance:";
             // 
             // label3
             // 
@@ -107,7 +109,7 @@
             this.AccountBalanceLabel.AutoSize = true;
             this.AccountBalanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AccountBalanceLabel.ForeColor = System.Drawing.Color.Lime;
-            this.AccountBalanceLabel.Location = new System.Drawing.Point(536, 234);
+            this.AccountBalanceLabel.Location = new System.Drawing.Point(656, 164);
             this.AccountBalanceLabel.Name = "AccountBalanceLabel";
             this.AccountBalanceLabel.Size = new System.Drawing.Size(45, 29);
             this.AccountBalanceLabel.TabIndex = 5;
@@ -137,7 +139,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(270, 164);
+            this.label5.Location = new System.Drawing.Point(34, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 29);
             this.label5.TabIndex = 8;
@@ -147,7 +149,7 @@
             // 
             this.AccountBranchNumberLabel.AutoSize = true;
             this.AccountBranchNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AccountBranchNumberLabel.Location = new System.Drawing.Point(394, 164);
+            this.AccountBranchNumberLabel.Location = new System.Drawing.Point(147, 209);
             this.AccountBranchNumberLabel.Name = "AccountBranchNumberLabel";
             this.AccountBranchNumberLabel.Size = new System.Drawing.Size(52, 29);
             this.AccountBranchNumberLabel.TabIndex = 9;
@@ -157,7 +159,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 315);
+            this.label6.Location = new System.Drawing.Point(33, 320);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(203, 32);
             this.label6.TabIndex = 10;
@@ -167,46 +169,36 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(34, 382);
+            this.label7.Location = new System.Drawing.Point(34, 387);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 25);
             this.label7.TabIndex = 11;
             this.label7.Text = "Loan Type";
             // 
-            // comboLoans
+            // comboLoanType
             // 
-            this.comboLoans.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboLoans.FormattingEnabled = true;
-            this.comboLoans.Location = new System.Drawing.Point(146, 379);
-            this.comboLoans.Name = "comboLoans";
-            this.comboLoans.Size = new System.Drawing.Size(148, 33);
-            this.comboLoans.TabIndex = 12;
-            this.comboLoans.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboLoanType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboLoanType.FormattingEnabled = true;
+            this.comboLoanType.Location = new System.Drawing.Point(146, 384);
+            this.comboLoanType.Name = "comboLoanType";
+            this.comboLoanType.Size = new System.Drawing.Size(148, 33);
+            this.comboLoanType.TabIndex = 12;
+            this.comboLoanType.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(310, 382);
+            this.label8.Location = new System.Drawing.Point(310, 387);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(136, 25);
             this.label8.TabIndex = 13;
             this.label8.Text = "Loan Number:";
             // 
-            // LoanNumber
-            // 
-            this.LoanNumber.AutoSize = true;
-            this.LoanNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoanNumber.Location = new System.Drawing.Point(452, 382);
-            this.LoanNumber.Name = "LoanNumber";
-            this.LoanNumber.Size = new System.Drawing.Size(67, 25);
-            this.LoanNumber.TabIndex = 14;
-            this.LoanNumber.Text = "13313";
-            // 
             // txtAmount
             // 
             this.txtAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmount.Location = new System.Drawing.Point(300, 436);
+            this.txtAmount.Location = new System.Drawing.Point(300, 441);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(100, 30);
             this.txtAmount.TabIndex = 15;
@@ -215,7 +207,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(208, 436);
+            this.label9.Location = new System.Drawing.Point(208, 441);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 25);
             this.label9.TabIndex = 16;
@@ -224,18 +216,19 @@
             // RequestLoanButton
             // 
             this.RequestLoanButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RequestLoanButton.Location = new System.Drawing.Point(469, 463);
+            this.RequestLoanButton.Location = new System.Drawing.Point(469, 468);
             this.RequestLoanButton.Name = "RequestLoanButton";
             this.RequestLoanButton.Size = new System.Drawing.Size(112, 45);
             this.RequestLoanButton.TabIndex = 17;
             this.RequestLoanButton.Text = "Confirm";
             this.RequestLoanButton.UseVisualStyleBackColor = true;
+            this.RequestLoanButton.Click += new System.EventHandler(this.RequestLoanButton_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(34, 234);
+            this.label10.Location = new System.Drawing.Point(34, 258);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(165, 29);
             this.label10.TabIndex = 18;
@@ -245,7 +238,7 @@
             // 
             this.AccountTypeLabel.AutoSize = true;
             this.AccountTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AccountTypeLabel.Location = new System.Drawing.Point(208, 234);
+            this.AccountTypeLabel.Location = new System.Drawing.Point(220, 258);
             this.AccountTypeLabel.Name = "AccountTypeLabel";
             this.AccountTypeLabel.Size = new System.Drawing.Size(109, 29);
             this.AccountTypeLabel.TabIndex = 19;
@@ -262,20 +255,53 @@
             this.AddAccountButton.UseVisualStyleBackColor = true;
             this.AddAccountButton.Click += new System.EventHandler(this.AddAccountButton_Click);
             // 
+            // comboLoanNumber
+            // 
+            this.comboLoanNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboLoanNumber.FormattingEnabled = true;
+            this.comboLoanNumber.Location = new System.Drawing.Point(452, 384);
+            this.comboLoanNumber.Name = "comboLoanNumber";
+            this.comboLoanNumber.Size = new System.Drawing.Size(148, 33);
+            this.comboLoanNumber.TabIndex = 21;
+            this.comboLoanNumber.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(416, 209);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(202, 29);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Pending Balance:";
+            // 
+            // AccountPendingBalanceLabel
+            // 
+            this.AccountPendingBalanceLabel.AutoSize = true;
+            this.AccountPendingBalanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountPendingBalanceLabel.ForeColor = System.Drawing.Color.DarkOrange;
+            this.AccountPendingBalanceLabel.Location = new System.Drawing.Point(656, 209);
+            this.AccountPendingBalanceLabel.Name = "AccountPendingBalanceLabel";
+            this.AccountPendingBalanceLabel.Size = new System.Drawing.Size(45, 29);
+            this.AccountPendingBalanceLabel.TabIndex = 23;
+            this.AccountPendingBalanceLabel.Text = "0.0";
+            // 
             // CustomerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 521);
+            this.ClientSize = new System.Drawing.Size(835, 518);
+            this.Controls.Add(this.AccountPendingBalanceLabel);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.comboLoanNumber);
             this.Controls.Add(this.AddAccountButton);
             this.Controls.Add(this.AccountTypeLabel);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.RequestLoanButton);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtAmount);
-            this.Controls.Add(this.LoanNumber);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboLoans);
+            this.Controls.Add(this.comboLoanType);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.AccountBranchNumberLabel);
@@ -310,9 +336,8 @@
         private System.Windows.Forms.Label AccountBranchNumberLabel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboLoans;
+        private System.Windows.Forms.ComboBox comboLoanType;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label LoanNumber;
         private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button RequestLoanButton;
@@ -320,5 +345,8 @@
         private System.Windows.Forms.Label AccountTypeLabel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button AddAccountButton;
+        private System.Windows.Forms.ComboBox comboLoanNumber;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label AccountPendingBalanceLabel;
     }
 }
