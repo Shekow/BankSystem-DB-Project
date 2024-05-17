@@ -24,7 +24,7 @@ namespace DatabaseProject
             private static SqlDataAdapter adapter = new SqlDataAdapter();
             public SqlTransaction DbTran;
 
-            private static string strConnString = "Data Source=(local);Initial Catalog=BankSystem;Integrated Security=True";
+            private static string strConnString = "Data Source=DESKTOP-6STO4SE\\SQLEXPRESS;Initial Catalog=BankSystem;Integrated Security=True";
 
 
 

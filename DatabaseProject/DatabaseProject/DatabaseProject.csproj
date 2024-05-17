@@ -72,6 +72,18 @@
       <DependentUpon>CustomerHomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="EmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpForm.Designer.cs">
+      <DependentUpon>EmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCustomers.Designer.cs">
+      <DependentUpon>ViewCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +123,9 @@
     <EmbeddedResource Include="CustomerHomePage.resx">
       <DependentUpon>CustomerHomePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmpForm.resx">
+      <DependentUpon>EmpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateUserForm.resx">
       <DependentUpon>UpdateUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCustomers.resx">
+      <DependentUpon>ViewCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
