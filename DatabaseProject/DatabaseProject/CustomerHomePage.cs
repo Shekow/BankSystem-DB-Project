@@ -48,7 +48,7 @@ namespace DatabaseProject
                 account.BranchNumber = Convert.ToInt32(dtAccounts.Rows[0]["BranchNumber"].ToString());
                 account.BankCode = dtAccounts.Rows[0]["BankCode"].ToString();
                 account.Type = dtAccounts.Rows[0]["BankCode"].ToString();
-                account.Balance = Convert.ToInt32(dtAccounts.Rows[0]["Balance"].ToString());
+                account.Balance = Convert.ToDouble(dtAccounts.Rows[0]["Balance"].ToString());
 
                 AccountBranchNumberLabel.Text = account.Number.ToString();
                 AccountBankCodeLabel.Text = account.BankCode.ToString();
@@ -63,7 +63,9 @@ namespace DatabaseProject
 
         private void AddAccountButton_Click(object sender, EventArgs e)
         {
-
+            AccountForm accountForm = new AccountForm();
+            this.Hide();
+            accountForm.Show();
         }
     }
 }

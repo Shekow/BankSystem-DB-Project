@@ -12,6 +12,6 @@ namespace DatabaseProject
         public int BranchNumber { get; set; }
         public String BankCode { get; set; }
         public String Type { get; set; }
-        public int Balance { get; set; }
+        public double Balance { get; set; }
     }
 }

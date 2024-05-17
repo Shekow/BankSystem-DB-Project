@@ -40,5 +40,25 @@ namespace DatabaseProject
             BankBranchForm bankBranchForm = new BankBranchForm();
             bankBranchForm.ShowDialog();
         }
+
+        private void CustomerButton_Click(object sender, EventArgs e)
+        {
+            user.Type = "Customer";
+            Login login = new Login();
+            this.Hide();
+            login.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BankForm bankForm = new BankForm();
+            bankForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BankBranchForm bankBranchForm = new BankBranchForm();
+            bankBranchForm.Show();
+        }
     }
 }

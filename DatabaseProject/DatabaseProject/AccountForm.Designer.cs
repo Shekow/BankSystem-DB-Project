@@ -33,7 +33,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBranchNumber = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboType = new System.Windows.Forms.ComboBox();
             this.comboBankCode = new System.Windows.Forms.ComboBox();
             this.RequestLoanButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -87,17 +87,17 @@
             this.comboBranchNumber.Size = new System.Drawing.Size(120, 33);
             this.comboBranchNumber.TabIndex = 73;
             // 
-            // comboBox1
+            // comboType
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboType.FormattingEnabled = true;
+            this.comboType.Items.AddRange(new object[] {
             "Personal",
             "Commercial"});
-            this.comboBox1.Location = new System.Drawing.Point(155, 193);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 33);
-            this.comboBox1.TabIndex = 74;
+            this.comboType.Location = new System.Drawing.Point(155, 193);
+            this.comboType.Name = "comboType";
+            this.comboType.Size = new System.Drawing.Size(148, 33);
+            this.comboType.TabIndex = 74;
             // 
             // comboBankCode
             // 
@@ -118,6 +118,7 @@
             this.RequestLoanButton.TabIndex = 76;
             this.RequestLoanButton.Text = "Confirm";
             this.RequestLoanButton.UseVisualStyleBackColor = true;
+            this.RequestLoanButton.Click += new System.EventHandler(this.RequestLoanButton_Click);
             // 
             // AccountForm
             // 
@@ -126,7 +127,7 @@
             this.ClientSize = new System.Drawing.Size(784, 387);
             this.Controls.Add(this.RequestLoanButton);
             this.Controls.Add(this.comboBankCode);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboType);
             this.Controls.Add(this.comboBranchNumber);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -147,7 +148,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBranchNumber;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboType;
         private System.Windows.Forms.ComboBox comboBankCode;
         private System.Windows.Forms.Button RequestLoanButton;
     }

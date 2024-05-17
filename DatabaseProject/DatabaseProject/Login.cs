@@ -28,8 +28,20 @@ namespace DatabaseProject
         {
             String SSN = txtSSN.Text;
             String Password = txtPassword.Text;
+            String query;
+            if (HomePage.user.Type == "Customer")
+            {
+                query = $"SELECT * FROM [Customer] WHERE [SSN] = '{SSN}' AND [Password] = '{Password}'";
+            }
+            else if (HomePage.user.Type == "Employee")
+            {
+                query = $"SELECT * FROM [Employee] WHERE [SSN] = '{SSN}' AND [Password] = '{Password}' AND [Admin] = 'False'";
+            }
+            else
+            {
+                query = $"SELECT * FROM [Employee] WHERE [SSN] = '{SSN}' AND [Password] = '{Password}' AND [Admin] = 'True'";
+            }
 
-            String query = $"SELECT * FROM [User] WHERE SSN = '{SSN}' AND Password = '{Password}'";
             DataTable dtUsers = new DataTable();
             dbAccess.readDatathroughAdapter(query, dtUsers);
             if (dtUsers.Rows.Count == 1)
@@ -43,12 +55,18 @@ namespace DatabaseProject
                 HomePage.user.Street = dtUsers.Rows[0]["Street"].ToString();
                 HomePage.user.City = dtUsers.Rows[0]["City"].ToString();
                 HomePage.user.Country = dtUsers.Rows[0]["Country"].ToString();
-                HomePage.user.Type = dtUsers.Rows[0]["Type"].ToString();
                 MessageBox.Show("You successfully logged in");
                 dbAccess.closeConn();
                 this.Hide();
-                HomePage homePage = new HomePage();
-                homePage.Show();
+                if (HomePage.user.Type == "Customer")
+                {
+                    CustomerHomePage customerHomePage = new CustomerHomePage();
+                    customerHomePage.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Under construction");
+                }
             }
             else
             {

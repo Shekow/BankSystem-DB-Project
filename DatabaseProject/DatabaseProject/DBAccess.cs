@@ -16,7 +16,7 @@ namespace DatabaseProject
 
     namespace DatabaseProject
     {
-        class DBAccess
+        public class DBAccess
         {
             private static SqlConnection connection = new SqlConnection();
             private static SqlCommand command = new SqlCommand();

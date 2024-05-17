@@ -28,63 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UpdateProfileButton = new System.Windows.Forms.Button();
-            this.AddBankButton = new System.Windows.Forms.Button();
-            this.AddBankBranchButton = new System.Windows.Forms.Button();
+            this.CustomerButton = new System.Windows.Forms.Button();
+            this.AdminButton = new System.Windows.Forms.Button();
+            this.EmployeeButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // UpdateProfileButton
+            // CustomerButton
             // 
-            this.UpdateProfileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateProfileButton.Location = new System.Drawing.Point(69, 57);
-            this.UpdateProfileButton.Name = "UpdateProfileButton";
-            this.UpdateProfileButton.Size = new System.Drawing.Size(173, 34);
-            this.UpdateProfileButton.TabIndex = 0;
-            this.UpdateProfileButton.Text = "Update profile";
-            this.UpdateProfileButton.UseVisualStyleBackColor = true;
-            this.UpdateProfileButton.Click += new System.EventHandler(this.UpdateProfileButton_Click);
+            this.CustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerButton.Location = new System.Drawing.Point(114, 232);
+            this.CustomerButton.Name = "CustomerButton";
+            this.CustomerButton.Size = new System.Drawing.Size(155, 112);
+            this.CustomerButton.TabIndex = 0;
+            this.CustomerButton.Text = "Customer";
+            this.CustomerButton.UseVisualStyleBackColor = true;
+            this.CustomerButton.Click += new System.EventHandler(this.CustomerButton_Click);
             // 
-            // AddBankButton
+            // AdminButton
             // 
-            this.AddBankButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddBankButton.Location = new System.Drawing.Point(69, 116);
-            this.AddBankButton.Name = "AddBankButton";
-            this.AddBankButton.Size = new System.Drawing.Size(173, 34);
-            this.AddBankButton.TabIndex = 1;
-            this.AddBankButton.Text = "Add Bank";
-            this.AddBankButton.UseVisualStyleBackColor = true;
-            this.AddBankButton.Click += new System.EventHandler(this.AddBankButton_Click);
+            this.AdminButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminButton.Location = new System.Drawing.Point(482, 232);
+            this.AdminButton.Name = "AdminButton";
+            this.AdminButton.Size = new System.Drawing.Size(151, 112);
+            this.AdminButton.TabIndex = 1;
+            this.AdminButton.Text = "Admin";
+            this.AdminButton.UseVisualStyleBackColor = true;
             // 
-            // AddBankBranchButton
+            // EmployeeButton
             // 
-            this.AddBankBranchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddBankBranchButton.Location = new System.Drawing.Point(69, 180);
-            this.AddBankBranchButton.Name = "AddBankBranchButton";
-            this.AddBankBranchButton.Size = new System.Drawing.Size(173, 34);
-            this.AddBankBranchButton.TabIndex = 2;
-            this.AddBankBranchButton.Text = "Add Bank Branch";
-            this.AddBankBranchButton.UseVisualStyleBackColor = true;
-            this.AddBankBranchButton.Click += new System.EventHandler(this.AddBankBranchButton_Click);
+            this.EmployeeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeButton.Location = new System.Drawing.Point(296, 232);
+            this.EmployeeButton.Name = "EmployeeButton";
+            this.EmployeeButton.Size = new System.Drawing.Size(156, 112);
+            this.EmployeeButton.TabIndex = 2;
+            this.EmployeeButton.Text = "Employee";
+            this.EmployeeButton.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(289, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 42);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Welcome";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(12, 44);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 42);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Add Bank";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(12, 109);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(143, 42);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Add Branch";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.AddBankBranchButton);
-            this.Controls.Add(this.AddBankButton);
-            this.Controls.Add(this.UpdateProfileButton);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.EmployeeButton);
+            this.Controls.Add(this.AdminButton);
+            this.Controls.Add(this.CustomerButton);
             this.Name = "HomePage";
             this.Text = "HomePage";
             this.Load += new System.EventHandler(this.HomePage_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button UpdateProfileButton;
-        private System.Windows.Forms.Button AddBankButton;
-        private System.Windows.Forms.Button AddBankBranchButton;
+        private System.Windows.Forms.Button CustomerButton;
+        private System.Windows.Forms.Button AdminButton;
+        private System.Windows.Forms.Button EmployeeButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

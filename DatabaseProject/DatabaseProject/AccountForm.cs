@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -39,6 +40,32 @@ namespace DatabaseProject
             for (int i = 0; i < dtBanks.Rows.Count; i++)
             {
                 comboBankCode.Items.Add(dtBanks.Rows[i]["Code"].ToString());
+            }
+        }
+
+        private void RequestLoanButton_Click(object sender, EventArgs e)
+        {
+            String BankCode = comboBankCode.Text;
+            String BranchNumber = comboBranchNumber.Text;
+            String Type = comboType.Text;
+            SqlCommand cmd = new SqlCommand("INSERT INTO Account(BankCode, BranchNumber, Type, CSSN)" +
+                "VALUES(@BankCode, @BranchNumber, @Type, @CSSN)");
+            cmd.Parameters.AddWithValue("@BankCode", BankCode);
+            cmd.Parameters.AddWithValue("@BranchNumber", BranchNumber);
+            cmd.Parameters.AddWithValue("@Type", Type);
+            cmd.Parameters.AddWithValue("@CSSN", HomePage.user.SSN);
+            int changes = dbAccess.executeQuery(cmd);
+            if (changes > 0)
+            {
+                MessageBox.Show("Account created successfully");
+                dbAccess.closeConn();
+                this.Hide();
+                CustomerHomePage customerHomePage = new CustomerHomePage();
+                customerHomePage.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Error: something went wrong");
             }
         }
     }
