@@ -120,7 +120,7 @@
             // 
             this.Street.AutoSize = true;
             this.Street.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Street.Location = new System.Drawing.Point(54, 518);
+            this.Street.Location = new System.Drawing.Point(51, 545);
             this.Street.Name = "Street";
             this.Street.Size = new System.Drawing.Size(77, 29);
             this.Street.TabIndex = 6;
@@ -130,7 +130,7 @@
             // 
             this.BuildingNumber.AutoSize = true;
             this.BuildingNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuildingNumber.Location = new System.Drawing.Point(441, 520);
+            this.BuildingNumber.Location = new System.Drawing.Point(449, 545);
             this.BuildingNumber.Name = "BuildingNumber";
             this.BuildingNumber.Size = new System.Drawing.Size(120, 29);
             this.BuildingNumber.TabIndex = 7;
@@ -227,7 +227,7 @@
             // txtStreet
             // 
             this.txtStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStreet.Location = new System.Drawing.Point(164, 515);
+            this.txtStreet.Location = new System.Drawing.Point(152, 542);
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.Size = new System.Drawing.Size(259, 34);
             this.txtStreet.TabIndex = 18;
@@ -243,7 +243,7 @@
             // txtBuildingNumber
             // 
             this.txtBuildingNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuildingNumber.Location = new System.Drawing.Point(578, 520);
+            this.txtBuildingNumber.Location = new System.Drawing.Point(578, 540);
             this.txtBuildingNumber.Name = "txtBuildingNumber";
             this.txtBuildingNumber.Size = new System.Drawing.Size(73, 34);
             this.txtBuildingNumber.TabIndex = 20;
@@ -265,7 +265,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(298, 592);
+            this.button1.Location = new System.Drawing.Point(294, 619);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 63);
             this.button1.TabIndex = 22;

@@ -28,6 +28,7 @@ namespace DatabaseProject
             String loansQuery = $"SELECT [Number] FROM [Loan] WHERE BankCode = '{account.BankCode}' AND BranchNumber = {account.BranchNumber} AND [Type] = '{Type}'";
             DataTable dtLoans = new DataTable();
             dbAccess.readDatathroughAdapter(loansQuery, dtLoans);
+            comboLoanNumber.Items.Clear();
             for (int i = 0; i < dtLoans.Rows.Count; i++)
             {
                 comboLoanNumber.Items.Add(dtLoans.Rows[i]["Number"].ToString());
@@ -37,6 +38,12 @@ namespace DatabaseProject
         private void CustomerHomePage_Load(object sender, EventArgs e)
         {
             UserNameLabel.Text = HomePage.user.FirstName;
+            this.LoadAccounts();
+        }
+
+        public void LoadAccounts()
+        {
+            comboAccounts.Items.Clear();
             String query = $"SELECT * FROM [Account] WHERE CSSN = '{HomePage.user.SSN}'";
             DataTable dtAccount = new DataTable();
             dbAccess.readDatathroughAdapter(query, dtAccount);
@@ -44,6 +51,16 @@ namespace DatabaseProject
             {
                 comboAccounts.Items.Add(dtAccount.Rows[i]["Number"].ToString());
             }
+        }
+
+        public void LoadPendingBalanace()
+        {
+            String pendingBal = $"SELECT [Amount] FROM [Requests] WHERE [AccountNumber] = {account.Number} AND NOT EXISTS(SELECT * FROM [ProcessLoanRequest] WHERE [RequestID] = [ID])";
+            DataTable dtRequests = new DataTable();
+            dbAccess.readDatathroughAdapter(pendingBal, dtRequests);
+            AccountPendingBalanceLabel.Text = dtRequests.Compute("SUM(Amount)", String.Empty).ToString();
+            if (AccountPendingBalanceLabel.Text.Equals(String.Empty))
+                AccountPendingBalanceLabel.Text = "0.0";
         }
 
         private void comboAccounts_SelectedIndexChanged(object sender, EventArgs e)
@@ -65,14 +82,11 @@ namespace DatabaseProject
                 AccountBalanceLabel.Text = account.Balance.ToString();
                 AccountTypeLabel.Text = account.Type.ToString();
 
-                String pendingBal = $"SELECT SUM([Amount]) AS Total FROM [Requests] WHERE [AccountNumber] = {account.Number}";
-                DataTable dtRequests = new DataTable();
-                dbAccess.readDatathroughAdapter(pendingBal, dtRequests);
-                AccountPendingBalanceLabel.Text = dtRequests.Rows[0]["Total"].ToString();
-
+                this.LoadPendingBalanace();
                 String loansQuery = $"SELECT DISTINCT [Type] FROM [Loan] WHERE BankCode = '{account.BankCode}' AND BranchNumber = {account.BranchNumber}";
                 DataTable dtLoans = new DataTable();
                 dbAccess.readDatathroughAdapter(loansQuery, dtLoans);
+                comboLoanType.Items.Clear();
                 for (int i = 0; i < dtLoans.Rows.Count; i++)
                 {
                     comboLoanType.Items.Add(dtLoans.Rows[i]["Type"].ToString());
@@ -88,7 +102,7 @@ namespace DatabaseProject
         private void AddAccountButton_Click(object sender, EventArgs e)
         {
             AccountForm accountForm = new AccountForm();
-            this.Hide();
+            accountForm.customerHomePage = this;
             accountForm.Show();
         }
 
@@ -107,7 +121,7 @@ namespace DatabaseProject
             if (changes > 0)
             {
                 MessageBox.Show("Loan requested successfully");
-                this.Refresh();
+                this.LoadPendingBalanace();
             }
             else
             {

@@ -62,6 +62,7 @@ namespace DatabaseProject
             String query = $"SELECT * FROM [Branch] WHERE BankCode = '{BankCode}'";
             DataTable dtBranches = new DataTable();
             dbAccess.readDatathroughAdapter(query, dtBranches);
+            comboBranchNumber.Items.Clear();
             for (int i = 0; i < dtBranches.Rows.Count; i++)
             {
                 comboBranchNumber.Items.Add(dtBranches.Rows[i]["Number"].ToString());
