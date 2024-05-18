@@ -44,7 +44,9 @@ namespace DatabaseProject
         private void CustomerButton_Click(object sender, EventArgs e)
         {
             user.Type = "Customer";
-            
+            Login login = new Login();
+            this.Hide();
+            login.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)

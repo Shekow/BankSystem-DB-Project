@@ -50,6 +50,7 @@ namespace DatabaseProject
                 HomePage.user.FirstName = dtUsers.Rows[0]["FirstName"].ToString();
                 HomePage.user.MiddleName = dtUsers.Rows[0]["MiddleName"].ToString();
                 HomePage.user.LastName = dtUsers.Rows[0]["LastName"].ToString();
+                HomePage.user.Phone = dtUsers.Rows[0]["Phone"].ToString();
                 HomePage.user.Password = dtUsers.Rows[0]["Password"].ToString();
                 HomePage.user.BuildingNumber = Convert.ToInt32(dtUsers.Rows[0]["BuildingNumber"].ToString());
                 HomePage.user.Street = dtUsers.Rows[0]["Street"].ToString();
@@ -65,7 +66,7 @@ namespace DatabaseProject
                 }
                 else if (HomePage.user.Type == "Employee")
                 {
-                    EmpForm emplyeeHomePage = new EmpForm();
+                    EmployeeHomePage emplyeeHomePage = new EmployeeHomePage();
                     emplyeeHomePage.Show();
                 }
                 else

@@ -24,6 +24,7 @@ namespace DatabaseProject
             txtFirstName.Text = HomePage.user.FirstName;
             txtMiddleName.Text = HomePage.user.MiddleName;
             txtLastName.Text = HomePage.user.LastName;
+            txtPhone.Text = HomePage.user.Phone;
             txtPassword.Text = HomePage.user.Password;
             txtBuildingNumber.Text = HomePage.user.BuildingNumber.ToString();
             txtStreet.Text = HomePage.user.Street;
@@ -37,15 +38,17 @@ namespace DatabaseProject
             String MiddleName = txtMiddleName.Text;
             String LastName = txtLastName.Text;
             String Password = txtPassword.Text;
+            String Phone = txtPhone.Text;
             String Country = txtCountry.Text;
             String City = txtCity.Text;
             String Street = txtStreet.Text;
             int BuildingNumber = Convert.ToInt32(txtBuildingNumber.Text);
-            String query = $"UPDATE [User] SET " +
+            String query = $"UPDATE [{(HomePage.user.Type == "Customer" ? "Customer" : "Employee")}] SET " +
                 $"FirstName = '{FirstName}', " +
                 $"MiddleName = '{MiddleName}', " +
                 $"LastName = '{LastName}', " +
                 $"Password = '{Password}', " +
+                $"Phone = '{Phone}', " +
                 $"BuildingNumber = {BuildingNumber}, " +
                 $"Street = '{Street}', " +
                 $"City = '{City}', " +
@@ -59,12 +62,28 @@ namespace DatabaseProject
                 HomePage.user.MiddleName = MiddleName;
                 HomePage.user.LastName = LastName;
                 HomePage.user.Password = Password;
+                HomePage.user.Phone = Phone;
                 HomePage.user.BuildingNumber = BuildingNumber;
                 HomePage.user.Street = Street;
                 HomePage.user.City = City;
                 HomePage.user.Country = Country;
                 MessageBox.Show("Information updated successfully");
                 this.Hide();
+                if (HomePage.user.Type == "Customer")
+                {
+                    CustomerHomePage customerHomePage = new CustomerHomePage();
+                    customerHomePage.Show();
+                }
+                else if (HomePage.user.Type == "Employee")
+                {
+                    EmployeeHomePage emplyeeHomePage = new EmployeeHomePage();
+                    emplyeeHomePage.Show();
+                }
+                else
+                {
+                    AdminHomePage adminHomePage = new AdminHomePage();
+                    adminHomePage.Show();
+                }
             }
             else
             {

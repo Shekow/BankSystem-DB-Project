@@ -30,6 +30,7 @@ namespace DatabaseProject
             String MiddleName = txtMiddleName.Text;
             String LastName = txtLastName.Text;
             String SSN = txtSSN.Text;
+            String Phone = txtPhone.Text;
             String Password = txtPassword.Text;
             String Country = txtCountry.Text;
             String City = txtCity.Text;
@@ -41,14 +42,14 @@ namespace DatabaseProject
                 cmd =
                new SqlCommand
                ("INSERT INTO Customer VALUES(@SSN, @FirstName, " +
-               "@MiddleName, @LastName, @BuildingNumber, @Street, @City, @Country, @Password)");
+               "@MiddleName, @LastName, @Phone, @BuildingNumber, @Street, @City, @Country, @Password)");
             }
             else
             {
                 cmd =
                new SqlCommand
                ("INSERT INTO Employee VALUES(@SSN, @FirstName, " +
-               "@MiddleName, @LastName, @BuildingNumber, @Street, @City, @Country, @Password, @Admin)");
+               "@MiddleName, @LastName, @Phone, @BuildingNumber, @Street, @City, @Country, @Password, @Admin)");
             }
 
             cmd.Parameters.AddWithValue("@FirstName", FirstName);
@@ -56,6 +57,7 @@ namespace DatabaseProject
             cmd.Parameters.AddWithValue("@LastName", LastName);
             cmd.Parameters.AddWithValue("@Password", Password);
             cmd.Parameters.AddWithValue("@SSN", SSN);
+            cmd.Parameters.AddWithValue("@Phone", Phone);
             cmd.Parameters.AddWithValue("@Country", Country);
             cmd.Parameters.AddWithValue("@City", City);
             cmd.Parameters.AddWithValue("@Street", Street);
@@ -67,6 +69,7 @@ namespace DatabaseProject
             if (row == 1)
             {
                 HomePage.user.SSN = SSN;
+                HomePage.user.Phone = Phone;
                 HomePage.user.FirstName = FirstName;
                 HomePage.user.MiddleName = MiddleName;
                 HomePage.user.LastName = LastName;
@@ -84,7 +87,7 @@ namespace DatabaseProject
                 }
                 else if (HomePage.user.Type == "Employee")
                 {
-                    EmpForm emplyeeHomePage = new EmpForm();
+                    EmployeeHomePage emplyeeHomePage = new EmployeeHomePage();
                     emplyeeHomePage.Show();
                 }
                 else
@@ -107,6 +110,61 @@ namespace DatabaseProject
         }
 
         private void SignUpForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuildingNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCity_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStreet_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCountry_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void City_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Country_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuildingNumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Street_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Password_Click(object sender, EventArgs e)
         {
 
         }

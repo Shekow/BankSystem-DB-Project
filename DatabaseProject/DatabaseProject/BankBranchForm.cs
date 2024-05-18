@@ -65,5 +65,10 @@ namespace DatabaseProject
                 MessageBox.Show("Error: something went wrong");
             }
         }
+
+        private void City_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -3,20 +3,72 @@
   "WorkspaceRootPath": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\loanlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\loanlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\loanlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\loanlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\adminhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\adminhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\adminhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\adminhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\employeehomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\employeehomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\employeehomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\employeehomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\updateuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\updateuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\updateuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\updateuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\customerhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\customerhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\customerhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\customerhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|c:\\code\\github\\banksystem\\databaseproject\\databaseproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64763F0F-E36D-4B38-B999-6E6B1246C4C2}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +78,219 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoanLogs.cs",
-              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\LoanLogs.cs",
-              "RelativeDocumentMoniker": "DatabaseProject\\LoanLogs.cs",
-              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\LoanLogs.cs",
-              "RelativeToolTip": "DatabaseProject\\LoanLogs.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAqwBQAAAAAAAAA",
+              "DocumentIndex": 8,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\Login.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\Login.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\Login.cs",
+              "RelativeToolTip": "DatabaseProject\\Login.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAwDQAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:46:37.732Z",
+              "WhenOpened": "2024-05-18T03:01:53.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\Login.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\Login.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\Login.cs [Design]",
+              "RelativeToolTip": "DatabaseProject\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T03:01:46.52Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerForm.cs",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\CustomerForm.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\CustomerForm.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\CustomerForm.cs",
+              "RelativeToolTip": "DatabaseProject\\CustomerForm.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAmwDYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:48:27.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateUserForm.cs",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\UpdateUserForm.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\UpdateUserForm.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\UpdateUserForm.cs",
+              "RelativeToolTip": "DatabaseProject\\UpdateUserForm.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAlwBgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:44:05.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateUserForm.cs [Design]",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\UpdateUserForm.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\UpdateUserForm.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\UpdateUserForm.cs [Design]",
+              "RelativeToolTip": "DatabaseProject\\UpdateUserForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:43:26.766Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\User.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\User.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\User.cs",
+              "RelativeToolTip": "DatabaseProject\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:42:02.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SignUpForm.cs",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\SignUpForm.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\SignUpForm.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\SignUpForm.cs",
+              "RelativeToolTip": "DatabaseProject\\SignUpForm.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAiwBwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:41:04.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignUpForm.cs [Design]",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\SignUpForm.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\SignUpForm.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\SignUpForm.cs [Design]",
+              "RelativeToolTip": "DatabaseProject\\SignUpForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:39:31.615Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerForm.cs [Design]",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\CustomerForm.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\CustomerForm.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\CustomerForm.cs [Design]",
+              "RelativeToolTip": "DatabaseProject\\CustomerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:39:13.379Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminHomePage.cs",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\AdminHomePage.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\AdminHomePage.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\AdminHomePage.cs",
+              "RelativeToolTip": "DatabaseProject\\AdminHomePage.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAswFMAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:06:04.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoanLogs.cs [Design]",
-              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\LoanLogs.cs",
-              "RelativeDocumentMoniker": "DatabaseProject\\LoanLogs.cs",
-              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\LoanLogs.cs [Design]",
-              "RelativeToolTip": "DatabaseProject\\LoanLogs.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:11:49.573Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomePage.cs [Design]",
-              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\HomePage.cs",
-              "RelativeDocumentMoniker": "DatabaseProject\\HomePage.cs",
-              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\HomePage.cs [Design]",
-              "RelativeToolTip": "DatabaseProject\\HomePage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:08:41.728Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "AdminHomePage.cs [Design]",
               "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\AdminHomePage.cs",
               "RelativeDocumentMoniker": "DatabaseProject\\AdminHomePage.cs",
               "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\AdminHomePage.cs [Design]",
               "RelativeToolTip": "DatabaseProject\\AdminHomePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:08:28.401Z",
+              "WhenOpened": "2024-05-18T02:05:57.419Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomePage.cs [Design]",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\HomePage.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\HomePage.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\HomePage.cs [Design]",
+              "RelativeToolTip": "DatabaseProject\\HomePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:05:34.35Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerHomePage.cs",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\CustomerHomePage.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\CustomerHomePage.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\CustomerHomePage.cs",
+              "RelativeToolTip": "DatabaseProject\\CustomerHomePage.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:05:06.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerHomePage.cs [Design]",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\CustomerHomePage.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\CustomerHomePage.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\CustomerHomePage.cs [Design]",
+              "RelativeToolTip": "DatabaseProject\\CustomerHomePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:04:29.316Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeHomePage.cs",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\EmployeeHomePage.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\EmployeeHomePage.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\EmployeeHomePage.cs",
+              "RelativeToolTip": "DatabaseProject\\EmployeeHomePage.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAADwvxkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T01:13:50.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\Program.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\Program.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\Program.cs",
+              "RelativeToolTip": "DatabaseProject\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T01:13:22.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeHomePage.cs [Design]",
+              "DocumentMoniker": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\EmployeeHomePage.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\EmployeeHomePage.cs",
+              "ToolTip": "C:\\Code\\GitHub\\BankSystem\\DatabaseProject\\DatabaseProject\\EmployeeHomePage.cs [Design]",
+              "RelativeToolTip": "DatabaseProject\\EmployeeHomePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T01:10:25.23Z",
               "EditorCaption": " [Design]"
             }
           ]

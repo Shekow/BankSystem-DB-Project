@@ -71,6 +71,12 @@
     <Compile Include="BankForm.Designer.cs">
       <DependentUpon>BankForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerHomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,23 +84,11 @@
       <DependentUpon>CustomerHomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="DBAccess.cs" />
-    <Compile Include="EmpForm.cs">
+    <Compile Include="EmployeeHomePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpForm.Designer.cs">
-      <DependentUpon>EmpForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoanLogs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoanLogs.Designer.cs">
-      <DependentUpon>LoanLogs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewCustomers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewCustomers.Designer.cs">
-      <DependentUpon>ViewCustomers.cs</DependentUpon>
+    <Compile Include="EmployeeHomePage.Designer.cs">
+      <DependentUpon>EmployeeHomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
@@ -141,20 +135,20 @@
     <EmbeddedResource Include="BankForm.resx">
       <DependentUpon>BankForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerHomePage.resx">
       <DependentUpon>CustomerHomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmpForm.resx">
-      <DependentUpon>EmpForm.cs</DependentUpon>
+    <EmbeddedResource Include="EmployeeHomePage.resx">
+      <DependentUpon>EmployeeHomePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoanForm.resx">
       <DependentUpon>LoanForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoanLogs.resx">
-      <DependentUpon>LoanLogs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -167,15 +161,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateUserForm.resx">
       <DependentUpon>UpdateUserForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewCustomers.resx">
-      <DependentUpon>ViewCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -189,6 +181,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mrkrabs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneyyy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cipher.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

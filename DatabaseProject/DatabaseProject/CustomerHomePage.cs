@@ -133,5 +133,24 @@ namespace DatabaseProject
         {
 
         }
+
+        private void UserNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            UpdateUserForm updateUserForm = new UpdateUserForm();
+            this.Hide();
+            updateUserForm.Show();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            this.Hide();
+            homePage.Show();
+        }
     }
 }
