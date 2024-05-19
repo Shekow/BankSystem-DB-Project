@@ -69,6 +69,8 @@
             // 
             this.dataGridCustomers.AllowUserToAddRows = false;
             this.dataGridCustomers.AllowUserToDeleteRows = false;
+            this.dataGridCustomers.BackgroundColor = System.Drawing.Color.Black;
+            this.dataGridCustomers.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridCustomers.Location = new System.Drawing.Point(303, 72);
             this.dataGridCustomers.Name = "dataGridCustomers";
@@ -153,6 +155,7 @@
             // FlowPanel
             // 
             this.FlowPanel.AutoScroll = true;
+            this.FlowPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.FlowPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.FlowPanel.Location = new System.Drawing.Point(303, 444);
             this.FlowPanel.Name = "FlowPanel";

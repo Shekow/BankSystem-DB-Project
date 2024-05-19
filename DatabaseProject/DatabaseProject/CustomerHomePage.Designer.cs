@@ -55,7 +55,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // comboAccounts
@@ -232,7 +234,7 @@
             // 
             // RequestLoanButton
             // 
-            this.RequestLoanButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RequestLoanButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.RequestLoanButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RequestLoanButton.Location = new System.Drawing.Point(698, 657);
             this.RequestLoanButton.Name = "RequestLoanButton";
@@ -266,11 +268,11 @@
             // 
             // AddAccountButton
             // 
-            this.AddAccountButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.AddAccountButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.AddAccountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddAccountButton.Location = new System.Drawing.Point(708, 116);
             this.AddAccountButton.Name = "AddAccountButton";
-            this.AddAccountButton.Size = new System.Drawing.Size(102, 37);
+            this.AddAccountButton.Size = new System.Drawing.Size(83, 37);
             this.AddAccountButton.TabIndex = 20;
             this.AddAccountButton.Text = "Add";
             this.AddAccountButton.UseVisualStyleBackColor = false;
@@ -342,12 +344,23 @@
             this.label13.Text = "Log Out";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::DatabaseProject.Properties.Resources.loan1;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(477, 451);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(103, 58);
+            this.pictureBox2.TabIndex = 91;
+            this.pictureBox2.TabStop = false;
+            // 
             // CustomerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(961, 724);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox1);
@@ -379,6 +392,7 @@
             this.Text = "CustomerHomePage";
             this.Load += new System.EventHandler(this.CustomerHomePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,5 +427,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -77,7 +77,7 @@ namespace DatabaseProject
                 account.Type = dtAccounts.Rows[0]["Type"].ToString();
                 account.Balance = Convert.ToDouble(dtAccounts.Rows[0]["Balance"].ToString());
 
-                AccountBranchNumberLabel.Text = account.Number.ToString();
+                AccountBranchNumberLabel.Text = account.BranchNumber.ToString();
                 AccountBankCodeLabel.Text = account.BankCode.ToString();
                 AccountBalanceLabel.Text = account.Balance.ToString();
                 AccountTypeLabel.Text = account.Type.ToString();

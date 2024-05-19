@@ -48,9 +48,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(258, 568);
+            this.button1.Location = new System.Drawing.Point(227, 568);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(206, 53);
             this.button1.TabIndex = 71;
@@ -61,7 +61,7 @@
             // txtBuildingNumber
             // 
             this.txtBuildingNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuildingNumber.Location = new System.Drawing.Point(563, 472);
+            this.txtBuildingNumber.Location = new System.Drawing.Point(532, 472);
             this.txtBuildingNumber.Name = "txtBuildingNumber";
             this.txtBuildingNumber.Size = new System.Drawing.Size(73, 34);
             this.txtBuildingNumber.TabIndex = 70;
@@ -69,7 +69,7 @@
             // txtCity
             // 
             this.txtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCity.Location = new System.Drawing.Point(431, 398);
+            this.txtCity.Location = new System.Drawing.Point(400, 398);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(205, 34);
             this.txtCity.TabIndex = 69;
@@ -77,7 +77,7 @@
             // txtStreet
             // 
             this.txtStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStreet.Location = new System.Drawing.Point(198, 472);
+            this.txtStreet.Location = new System.Drawing.Point(167, 472);
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.Size = new System.Drawing.Size(220, 34);
             this.txtStreet.TabIndex = 68;
@@ -85,7 +85,7 @@
             // txtCountry
             // 
             this.txtCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCountry.Location = new System.Drawing.Point(198, 395);
+            this.txtCountry.Location = new System.Drawing.Point(167, 395);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(151, 34);
             this.txtCountry.TabIndex = 67;
@@ -95,7 +95,7 @@
             this.City.AutoSize = true;
             this.City.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.City.ForeColor = System.Drawing.Color.White;
-            this.City.Location = new System.Drawing.Point(365, 398);
+            this.City.Location = new System.Drawing.Point(334, 398);
             this.City.Name = "City";
             this.City.Size = new System.Drawing.Size(53, 29);
             this.City.TabIndex = 65;
@@ -107,7 +107,7 @@
             this.Country.AutoSize = true;
             this.Country.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Country.ForeColor = System.Drawing.Color.White;
-            this.Country.Location = new System.Drawing.Point(88, 395);
+            this.Country.Location = new System.Drawing.Point(57, 395);
             this.Country.Name = "Country";
             this.Country.Size = new System.Drawing.Size(95, 29);
             this.Country.TabIndex = 64;
@@ -118,7 +118,7 @@
             this.BuildingNumber.AutoSize = true;
             this.BuildingNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuildingNumber.ForeColor = System.Drawing.Color.White;
-            this.BuildingNumber.Location = new System.Drawing.Point(426, 475);
+            this.BuildingNumber.Location = new System.Drawing.Point(395, 475);
             this.BuildingNumber.Name = "BuildingNumber";
             this.BuildingNumber.Size = new System.Drawing.Size(120, 29);
             this.BuildingNumber.TabIndex = 63;
@@ -129,7 +129,7 @@
             this.Street.AutoSize = true;
             this.Street.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Street.ForeColor = System.Drawing.Color.White;
-            this.Street.Location = new System.Drawing.Point(88, 475);
+            this.Street.Location = new System.Drawing.Point(57, 475);
             this.Street.Name = "Street";
             this.Street.Size = new System.Drawing.Size(77, 29);
             this.Street.TabIndex = 62;
@@ -140,7 +140,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(88, 260);
+            this.label2.Location = new System.Drawing.Point(57, 260);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 29);
             this.label2.TabIndex = 59;
@@ -150,7 +150,7 @@
             // 
             this.comboBankCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBankCode.FormattingEnabled = true;
-            this.comboBankCode.Location = new System.Drawing.Point(275, 257);
+            this.comboBankCode.Location = new System.Drawing.Point(244, 257);
             this.comboBankCode.Name = "comboBankCode";
             this.comboBankCode.Size = new System.Drawing.Size(361, 37);
             this.comboBankCode.TabIndex = 72;
@@ -160,7 +160,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(88, 323);
+            this.label4.Location = new System.Drawing.Point(57, 323);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(181, 29);
             this.label4.TabIndex = 73;
@@ -169,7 +169,7 @@
             // txtNumber
             // 
             this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumber.Location = new System.Drawing.Point(275, 323);
+            this.txtNumber.Location = new System.Drawing.Point(244, 323);
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(361, 34);
             this.txtNumber.TabIndex = 74;
@@ -178,7 +178,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::DatabaseProject.Properties.Resources.cipher;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(215, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(184, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(298, 159);
             this.pictureBox1.TabIndex = 81;
@@ -189,7 +189,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe Print", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(213, 187);
+            this.label6.Location = new System.Drawing.Point(182, 187);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(300, 54);
             this.label6.TabIndex = 80;
@@ -200,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(751, 722);
+            this.ClientSize = new System.Drawing.Size(683, 684);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtNumber);

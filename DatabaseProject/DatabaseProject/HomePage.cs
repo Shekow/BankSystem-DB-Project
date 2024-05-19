@@ -82,5 +82,11 @@ namespace DatabaseProject
             this.Hide();
             login.ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Report report = new Report();
+            report.Show();
+        }
     }
 }

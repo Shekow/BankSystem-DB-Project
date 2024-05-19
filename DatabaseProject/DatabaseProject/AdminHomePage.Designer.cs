@@ -71,6 +71,8 @@
             // 
             this.dataGridLogs.AllowUserToAddRows = false;
             this.dataGridLogs.AllowUserToDeleteRows = false;
+            this.dataGridLogs.BackgroundColor = System.Drawing.Color.Black;
+            this.dataGridLogs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridLogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridLogs.Location = new System.Drawing.Point(309, 68);
             this.dataGridLogs.Name = "dataGridLogs";
@@ -93,9 +95,9 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(555, 590);
+            this.button3.Location = new System.Drawing.Point(555, 670);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(325, 42);
             this.button3.TabIndex = 37;
@@ -105,9 +107,9 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(555, 651);
+            this.button2.Location = new System.Drawing.Point(555, 601);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(325, 42);
             this.button2.TabIndex = 36;
@@ -117,7 +119,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(555, 533);
             this.button1.Name = "button1";
@@ -129,7 +131,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(309, 447);
             this.button4.Name = "button4";
@@ -152,7 +154,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button5.BackColor = System.Drawing.Color.DodgerBlue;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(599, 447);
             this.button5.Name = "button5";

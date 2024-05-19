@@ -128,7 +128,6 @@ namespace DatabaseProject
                 acceptButton.Click += (buttonSender, buttonArgs) =>
                 {
                     query = $"SELECT * FROM [Requests] WHERE [ID] = '{acceptButton.Tag}'";
-                    MessageBox.Show(acceptButton.Tag.ToString());
                     DataTable dt = new DataTable();
                     dbAccess.readDatathroughAdapter(query, dt);
                     String State = "Accepted";

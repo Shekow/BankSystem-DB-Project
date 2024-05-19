@@ -35,12 +35,13 @@
             this.EmployeeButton = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CustomerButton
             // 
-            this.CustomerButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.CustomerButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.CustomerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerButton.ForeColor = System.Drawing.Color.Transparent;
@@ -65,7 +66,7 @@
             // 
             // AdminButton
             // 
-            this.AdminButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.AdminButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.AdminButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminButton.ForeColor = System.Drawing.Color.Transparent;
             this.AdminButton.Location = new System.Drawing.Point(521, 305);
@@ -78,7 +79,7 @@
             // 
             // EmployeeButton
             // 
-            this.EmployeeButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.EmployeeButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.EmployeeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmployeeButton.ForeColor = System.Drawing.Color.Transparent;
             this.EmployeeButton.Location = new System.Drawing.Point(324, 305);
@@ -105,12 +106,26 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 51);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Report";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(815, 522);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.EmployeeButton);
@@ -134,5 +149,6 @@
         private System.Windows.Forms.Button EmployeeButton;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

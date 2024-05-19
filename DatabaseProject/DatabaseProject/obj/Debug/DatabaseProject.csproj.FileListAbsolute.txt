@@ -31,3 +31,4 @@ C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProj
 C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.AdminHomePage.resources
 C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.EmployeeHomePage.resources
 C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.CustomerForm.resources
+C:\Code\GitHub\BankSystem\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.Report.resources

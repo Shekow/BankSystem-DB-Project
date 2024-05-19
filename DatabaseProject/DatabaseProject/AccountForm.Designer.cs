@@ -45,7 +45,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(127, 364);
+            this.label1.Location = new System.Drawing.Point(26, 360);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 29);
             this.label1.TabIndex = 3;
@@ -56,7 +56,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(127, 310);
+            this.label3.Location = new System.Drawing.Point(26, 306);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(181, 29);
             this.label3.TabIndex = 5;
@@ -67,7 +67,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(127, 251);
+            this.label4.Location = new System.Drawing.Point(26, 247);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 29);
             this.label4.TabIndex = 6;
@@ -77,7 +77,7 @@
             // 
             this.comboBranchNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBranchNumber.FormattingEnabled = true;
-            this.comboBranchNumber.Location = new System.Drawing.Point(314, 310);
+            this.comboBranchNumber.Location = new System.Drawing.Point(213, 306);
             this.comboBranchNumber.Name = "comboBranchNumber";
             this.comboBranchNumber.Size = new System.Drawing.Size(161, 33);
             this.comboBranchNumber.TabIndex = 73;
@@ -89,7 +89,7 @@
             this.comboType.Items.AddRange(new object[] {
             "Personal",
             "Commercial"});
-            this.comboType.Location = new System.Drawing.Point(216, 364);
+            this.comboType.Location = new System.Drawing.Point(115, 360);
             this.comboType.Name = "comboType";
             this.comboType.Size = new System.Drawing.Size(259, 33);
             this.comboType.TabIndex = 74;
@@ -98,7 +98,7 @@
             // 
             this.comboBankCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBankCode.FormattingEnabled = true;
-            this.comboBankCode.Location = new System.Drawing.Point(265, 254);
+            this.comboBankCode.Location = new System.Drawing.Point(164, 250);
             this.comboBankCode.Name = "comboBankCode";
             this.comboBankCode.Size = new System.Drawing.Size(210, 33);
             this.comboBankCode.TabIndex = 75;
@@ -108,7 +108,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::DatabaseProject.Properties.Resources.cipher;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(199, 35);
+            this.pictureBox1.Location = new System.Drawing.Point(98, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(217, 150);
             this.pictureBox1.TabIndex = 78;
@@ -116,9 +116,9 @@
             // 
             // RequestLoanButton
             // 
-            this.RequestLoanButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.RequestLoanButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.RequestLoanButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RequestLoanButton.Location = new System.Drawing.Point(230, 439);
+            this.RequestLoanButton.Location = new System.Drawing.Point(134, 434);
             this.RequestLoanButton.Name = "RequestLoanButton";
             this.RequestLoanButton.Size = new System.Drawing.Size(120, 48);
             this.RequestLoanButton.TabIndex = 76;
@@ -131,7 +131,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe Print", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(193, 188);
+            this.label6.Location = new System.Drawing.Point(92, 184);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(223, 54);
             this.label6.TabIndex = 77;
@@ -142,7 +142,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(610, 550);
+            this.ClientSize = new System.Drawing.Size(433, 550);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.RequestLoanButton);
