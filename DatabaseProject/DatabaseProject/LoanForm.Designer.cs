@@ -70,9 +70,9 @@
             // 
             this.comboBankCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBankCode.FormattingEnabled = true;
-            this.comboBankCode.Location = new System.Drawing.Point(219, 265);
+            this.comboBankCode.Location = new System.Drawing.Point(268, 265);
             this.comboBankCode.Name = "comboBankCode";
-            this.comboBankCode.Size = new System.Drawing.Size(183, 33);
+            this.comboBankCode.Size = new System.Drawing.Size(155, 33);
             this.comboBankCode.TabIndex = 84;
             this.comboBankCode.SelectedIndexChanged += new System.EventHandler(this.comboBankCode_SelectedIndexChanged);
             // 
@@ -82,7 +82,7 @@
             this.comboBranchNumber.FormattingEnabled = true;
             this.comboBranchNumber.Location = new System.Drawing.Point(268, 329);
             this.comboBranchNumber.Name = "comboBranchNumber";
-            this.comboBranchNumber.Size = new System.Drawing.Size(134, 33);
+            this.comboBranchNumber.Size = new System.Drawing.Size(155, 33);
             this.comboBranchNumber.TabIndex = 83;
             // 
             // label4
@@ -110,17 +110,17 @@
             // txtNumber
             // 
             this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumber.Location = new System.Drawing.Point(187, 390);
+            this.txtNumber.Location = new System.Drawing.Point(268, 390);
             this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(215, 30);
+            this.txtNumber.Size = new System.Drawing.Size(155, 30);
             this.txtNumber.TabIndex = 85;
             // 
             // txtType
             // 
             this.txtType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtType.Location = new System.Drawing.Point(155, 454);
+            this.txtType.Location = new System.Drawing.Point(268, 454);
             this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(247, 30);
+            this.txtType.Size = new System.Drawing.Size(155, 30);
             this.txtType.TabIndex = 86;
             // 
             // RequestLoanButton

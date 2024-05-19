@@ -5,24 +5,18 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class Report : Form
+    public partial class ReportForm : Form
     {
         DBAccess dbAccess = new DBAccess();
-        public Report()
+        public ReportForm()
         {
             InitializeComponent();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-            
         }
         void LoadTotal(String query, Label label)
         {
@@ -36,9 +30,9 @@ namespace DatabaseProject
         {
             DataTable dataTable = new DataTable();
             dbAccess.readDatathroughAdapter(query, dataTable);
-            dataGridStats.DataSource = dataTable;
+            dataGridStatistics.DataSource = dataTable;
         }
-        private void Report_Load(object sender, EventArgs e)
+        private void ReportForm_Load(object sender, EventArgs e)
         {
             LoadTotal("SELECT * FROM [Requests]", txtRequested);
             LoadTotal("SELECT [Amount] FROM [Requests] WHERE NOT EXISTS(SELECT * FROM [ProcessLoanRequest] WHERE [RequestID] = [ID])", txtPending);
@@ -57,7 +51,7 @@ namespace DatabaseProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String query = "SELECT [Customer].[City], SUM([Requests].[Amount]) FROM [Account] " +
+            String query = "SELECT [Customer].[City], SUM([Requests].[Amount]) AS [Total Amount] FROM [Account] " +
                 "JOIN [Requests] ON [Account].[Number] = [Requests].[AccountNumber]" +
                 "JOIN [Customer] ON [Account].[CSSN] = [Customer].[SSN]" +
                 "GROUP BY [Customer].[City]" +

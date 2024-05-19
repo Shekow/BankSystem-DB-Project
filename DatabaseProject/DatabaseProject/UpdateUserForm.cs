@@ -55,7 +55,16 @@ namespace DatabaseProject
                 $"Country = '{Country}' " +
                 $"WHERE SSN = '{HomePage.user.SSN}'";
             SqlCommand cmd = new SqlCommand(query);
-            int changes  = dbAccess.executeQuery(cmd);
+            int changes;
+            try
+            {
+                changes = dbAccess.executeQuery(cmd);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Some data is missing/invalid");
+                return;
+            }
             if (changes == 1)
             {
                 HomePage.user.FirstName = FirstName;
@@ -94,6 +103,34 @@ namespace DatabaseProject
         private void txtSecondName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (HomePage.user.Type != "Admin")
+            {
+                MessageBox.Show("Sorry, You can't delete your account");
+                return;
+            }
+            
+            DialogResult result = MessageBox.Show("Are you sure?", "Delete account", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result != DialogResult.Yes)
+                return;
+            String query = $"DELETE FROM [Employee] WHERE [SSN] = '{HomePage.user.SSN}' AND [Admin] = 'True'"; ;
+            
+            SqlCommand cmd = new SqlCommand(query);
+            int changes = dbAccess.executeQuery(cmd);
+            if (changes == 1)
+            {
+                MessageBox.Show("Account deleted successfully");
+                HomePage homePage = new HomePage();
+                this.Hide();
+                homePage.Show();
+            }
+            else
+            {
+                MessageBox.Show("Error: something went wrong");
+            }
         }
     }
 }

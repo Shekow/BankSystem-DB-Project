@@ -45,7 +45,7 @@
             this.CustomerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerButton.ForeColor = System.Drawing.Color.Transparent;
-            this.CustomerButton.Location = new System.Drawing.Point(146, 305);
+            this.CustomerButton.Location = new System.Drawing.Point(120, 311);
             this.CustomerButton.Name = "CustomerButton";
             this.CustomerButton.Size = new System.Drawing.Size(151, 86);
             this.CustomerButton.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(327, 245);
+            this.label1.Location = new System.Drawing.Point(301, 251);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 42);
             this.label1.TabIndex = 3;
@@ -69,7 +69,7 @@
             this.AdminButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.AdminButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminButton.ForeColor = System.Drawing.Color.Transparent;
-            this.AdminButton.Location = new System.Drawing.Point(521, 305);
+            this.AdminButton.Location = new System.Drawing.Point(495, 311);
             this.AdminButton.Name = "AdminButton";
             this.AdminButton.Size = new System.Drawing.Size(137, 86);
             this.AdminButton.TabIndex = 1;
@@ -82,7 +82,7 @@
             this.EmployeeButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.EmployeeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmployeeButton.ForeColor = System.Drawing.Color.Transparent;
-            this.EmployeeButton.Location = new System.Drawing.Point(324, 305);
+            this.EmployeeButton.Location = new System.Drawing.Point(298, 311);
             this.EmployeeButton.Name = "EmployeeButton";
             this.EmployeeButton.Size = new System.Drawing.Size(158, 86);
             this.EmployeeButton.TabIndex = 2;
@@ -100,7 +100,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::DatabaseProject.Properties.Resources.cipher;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(218, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(192, 45);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(367, 186);
             this.pictureBox1.TabIndex = 5;
@@ -124,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(815, 522);
+            this.ClientSize = new System.Drawing.Size(781, 483);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);

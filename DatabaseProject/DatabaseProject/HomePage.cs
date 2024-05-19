@@ -85,7 +85,7 @@ namespace DatabaseProject
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Report report = new Report();
+            ReportForm report = new ReportForm();
             report.Show();
         }
     }

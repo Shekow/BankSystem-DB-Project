@@ -46,17 +46,23 @@ namespace DatabaseProject
             cmd.Parameters.AddWithValue("@City", City);
             cmd.Parameters.AddWithValue("@Street", Street);
             cmd.Parameters.AddWithValue("@BuildingNumber", BuildingNumber);
-
-            int row = dbAccess.executeQuery(cmd);
-            if (row == 1)
+            try
             {
-                MessageBox.Show("Customer added successfully");
-                this.Hide();
-                homePage.LoadCustomers();
+                int changes = dbAccess.executeQuery(cmd);
+                if (changes == 1)
+                {
+                    MessageBox.Show("Customer added successfully");
+                    this.Hide();
+                    homePage.LoadCustomers();
+                }
+                else
+                {
+                    MessageBox.Show("Error: something went wrong");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Error: something went wrong");
+                MessageBox.Show("Some data is missing/invalid");
             }
         }
     }

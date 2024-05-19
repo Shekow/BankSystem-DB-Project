@@ -50,16 +50,18 @@
             this.Country = new System.Windows.Forms.Label();
             this.BuildingNumber = new System.Windows.Forms.Label();
             this.Street = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(237, 621);
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(244, 606);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(506, 50);
+            this.button1.Size = new System.Drawing.Size(499, 42);
             this.button1.TabIndex = 47;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
@@ -77,9 +79,9 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(358, 417);
+            this.txtPassword.Location = new System.Drawing.Point(396, 417);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(385, 34);
+            this.txtPassword.Size = new System.Drawing.Size(347, 34);
             this.txtPassword.TabIndex = 62;
             // 
             // Password
@@ -117,9 +119,9 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(366, 300);
+            this.txtLastName.Location = new System.Drawing.Point(396, 300);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(377, 34);
+            this.txtLastName.Size = new System.Drawing.Size(347, 34);
             this.txtLastName.TabIndex = 74;
             // 
             // txtMiddleName
@@ -133,9 +135,9 @@
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(369, 174);
+            this.txtFirstName.Location = new System.Drawing.Point(396, 174);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(374, 34);
+            this.txtFirstName.Size = new System.Drawing.Size(347, 34);
             this.txtFirstName.TabIndex = 72;
             // 
             // SecondName
@@ -174,9 +176,9 @@
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(315, 358);
+            this.txtPhone.Location = new System.Drawing.Point(396, 358);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(428, 34);
+            this.txtPhone.Size = new System.Drawing.Size(347, 34);
             this.txtPhone.TabIndex = 76;
             // 
             // label2
@@ -209,9 +211,9 @@
             // txtStreet
             // 
             this.txtStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStreet.Location = new System.Drawing.Point(316, 539);
+            this.txtStreet.Location = new System.Drawing.Point(334, 539);
             this.txtStreet.Name = "txtStreet";
-            this.txtStreet.Size = new System.Drawing.Size(196, 34);
+            this.txtStreet.Size = new System.Drawing.Size(178, 34);
             this.txtStreet.TabIndex = 82;
             // 
             // txtCountry
@@ -266,12 +268,26 @@
             this.Street.TabIndex = 77;
             this.Street.Text = "Street";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Crimson;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(244, 667);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(500, 42);
+            this.button2.TabIndex = 85;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // UpdateUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(823, 706);
+            this.ClientSize = new System.Drawing.Size(786, 746);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.txtBuildingNumber);
             this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtStreet);
@@ -294,6 +310,7 @@
             this.Controls.Add(this.Password);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "UpdateUserForm";
             this.Text = "UpdateUserForm";
             this.Load += new System.EventHandler(this.UpdateUserForm_Load);
@@ -326,5 +343,6 @@
         private System.Windows.Forms.Label Country;
         private System.Windows.Forms.Label BuildingNumber;
         private System.Windows.Forms.Label Street;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -58,9 +58,9 @@
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(300, 424);
+            this.txtPhone.Location = new System.Drawing.Point(381, 424);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(428, 34);
+            this.txtPhone.Size = new System.Drawing.Size(347, 34);
             this.txtPhone.TabIndex = 56;
             // 
             // label2
@@ -97,6 +97,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(332, 672);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(273, 53);
@@ -108,25 +109,25 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(357, 483);
+            this.txtPassword.Location = new System.Drawing.Point(381, 483);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(371, 34);
+            this.txtPassword.Size = new System.Drawing.Size(347, 34);
             this.txtPassword.TabIndex = 46;
             // 
             // txtSSN
             // 
             this.txtSSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSSN.Location = new System.Drawing.Point(286, 366);
+            this.txtSSN.Location = new System.Drawing.Point(381, 366);
             this.txtSSN.Name = "txtSSN";
-            this.txtSSN.Size = new System.Drawing.Size(442, 34);
+            this.txtSSN.Size = new System.Drawing.Size(347, 34);
             this.txtSSN.TabIndex = 45;
             // 
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(351, 304);
+            this.txtLastName.Location = new System.Drawing.Point(381, 304);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(377, 34);
+            this.txtLastName.Size = new System.Drawing.Size(347, 34);
             this.txtLastName.TabIndex = 44;
             // 
             // txtMiddleName
@@ -140,9 +141,9 @@
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(354, 178);
+            this.txtFirstName.Location = new System.Drawing.Point(381, 178);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(374, 34);
+            this.txtFirstName.Size = new System.Drawing.Size(347, 34);
             this.txtFirstName.TabIndex = 42;
             // 
             // SecondName
@@ -230,9 +231,9 @@
             // txtStreet
             // 
             this.txtStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStreet.Location = new System.Drawing.Point(300, 600);
+            this.txtStreet.Location = new System.Drawing.Point(318, 600);
             this.txtStreet.Name = "txtStreet";
-            this.txtStreet.Size = new System.Drawing.Size(196, 34);
+            this.txtStreet.Size = new System.Drawing.Size(178, 34);
             this.txtStreet.TabIndex = 62;
             // 
             // txtCountry

@@ -28,6 +28,16 @@ namespace DatabaseProject
         {
             String SSN = txtSSN.Text;
             String Password = txtPassword.Text;
+            if (SSN.Equals(string.Empty))
+            {
+                MessageBox.Show("Missing username");
+                return;
+            }
+            if (Password.Equals(string.Empty))
+            {
+                MessageBox.Show("Missing username");
+                return;
+            }
             String query;
             if (HomePage.user.Type == "Customer")
             {

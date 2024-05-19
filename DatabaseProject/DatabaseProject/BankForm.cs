@@ -37,15 +37,22 @@ namespace DatabaseProject
             cmd.Parameters.AddWithValue("@Street", Street);
             cmd.Parameters.AddWithValue("@BuildingNumber", BuildingNumber);
 
-            int row = dbAccess.executeQuery(cmd);
-            if (row == 1)
+            try
             {
-                MessageBox.Show("Account created successfully");
-                this.Hide();
+                int changes = dbAccess.executeQuery(cmd);
+                if (changes == 1)
+                {
+                    MessageBox.Show("Account created successfully");
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Error: something went wrong");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Error: something went wrong");
+                MessageBox.Show("Some data is missing/invalid");
             }
         }
     }

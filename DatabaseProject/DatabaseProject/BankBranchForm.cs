@@ -53,16 +53,23 @@ namespace DatabaseProject
             cmd.Parameters.AddWithValue("@Street", Street);
             cmd.Parameters.AddWithValue("@City", City);
             cmd.Parameters.AddWithValue("@Country", Country);
-            int changes = dbAccess.executeQuery(cmd);
-            if (changes > 0) 
+            try
             {
-                MessageBox.Show("Branch added successfully");
-                dbAccess.closeConn();
-                this.Hide();
+                int changes = dbAccess.executeQuery(cmd);
+                if (changes > 0)
+                {
+                    MessageBox.Show("Branch added successfully");
+                    dbAccess.closeConn();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Error: something went wrong");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Error: something went wrong");
+                MessageBox.Show("Some data is missing/invalid");
             }
         }
 

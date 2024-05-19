@@ -60,7 +60,7 @@ namespace DatabaseProject
             dbAccess.readDatathroughAdapter(pendingBal, dtRequests);
             AccountPendingBalanceLabel.Text = dtRequests.Compute("SUM(Amount)", String.Empty).ToString();
             if (AccountPendingBalanceLabel.Text.Equals(String.Empty))
-                AccountPendingBalanceLabel.Text = "0.0";
+                AccountPendingBalanceLabel.Text = "0";
         }
 
         private void comboAccounts_SelectedIndexChanged(object sender, EventArgs e)
@@ -83,6 +83,11 @@ namespace DatabaseProject
                 AccountTypeLabel.Text = account.Type.ToString();
 
                 this.LoadPendingBalanace();
+
+                comboLoanType.Text = "";
+                comboLoanNumber.Text = "";
+                txtAmount.Text = "";
+
                 String loansQuery = $"SELECT DISTINCT [Type] FROM [Loan] WHERE BankCode = '{account.BankCode}' AND BranchNumber = {account.BranchNumber}";
                 DataTable dtLoans = new DataTable();
                 dbAccess.readDatathroughAdapter(loansQuery, dtLoans);
@@ -117,15 +122,22 @@ namespace DatabaseProject
             cmd.Parameters.AddWithValue("@BranchNumber", account.BranchNumber);
             cmd.Parameters.AddWithValue("@BankCode", account.BankCode);
             cmd.Parameters.AddWithValue("@Amount", Amount);
-            int changes = dbAccess.executeQuery(cmd);
-            if (changes > 0)
+            try
             {
-                MessageBox.Show("Loan requested successfully");
-                this.LoadPendingBalanace();
+                int changes = dbAccess.executeQuery(cmd);
+                if (changes > 0)
+                {
+                    MessageBox.Show("Loan requested successfully");
+                    this.LoadPendingBalanace();
+                }
+                else
+                {
+                    MessageBox.Show("Something went wrong");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Something went wrong");
+                MessageBox.Show("Some data is missing/invalid");
             }
         }
 

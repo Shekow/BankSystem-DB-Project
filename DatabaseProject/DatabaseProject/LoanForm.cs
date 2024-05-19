@@ -32,16 +32,23 @@ namespace DatabaseProject
             cmd.Parameters.AddWithValue("@BranchNumber", BranchNumber);
             cmd.Parameters.AddWithValue("@Type", Type);
             cmd.Parameters.AddWithValue("@Number", Number);
-            int changes = dbAccess.executeQuery(cmd);
-            if (changes > 0)
+            try
             {
-                MessageBox.Show("Loan added successfully");
-                dbAccess.closeConn();
-                this.Hide();
+                int changes = dbAccess.executeQuery(cmd);
+                if (changes > 0)
+                {
+                    MessageBox.Show("Loan added successfully");
+                    dbAccess.closeConn();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Error: something went wrong");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Error: something went wrong");
+                MessageBox.Show("Some data is missing/invalid");
             }
         }
 

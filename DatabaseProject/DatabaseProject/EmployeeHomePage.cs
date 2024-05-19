@@ -82,7 +82,7 @@ namespace DatabaseProject
                 Label labelBranch = new Label()
                 {
                     Text = "Branch: " + dtLoans.Rows[i]["BranchNumber"].ToString(),
-                    Location = new Point(80, 25),
+                    Location = new Point(180, 1),
                     ForeColor = Color.DeepSkyBlue,
                     AutoSize = true,
                     Font = new Font(this.Font.FontFamily, 9.5f, FontStyle.Regular),
@@ -90,7 +90,7 @@ namespace DatabaseProject
                 Label labelLoan = new Label()
                 {
                     Text = "Loan: " + dtLoans.Rows[i]["LoanNumber"].ToString(),
-                    Location = new Point(160, 1),
+                    Location = new Point(80, 25),
                     ForeColor = Color.DeepSkyBlue,
                     AutoSize = true,
                     Font = new Font(this.Font.FontFamily, 9.5f, FontStyle.Regular),
@@ -98,7 +98,7 @@ namespace DatabaseProject
                 Label labelAmount = new Label()
                 {
                     Text = "Amount: " + dtLoans.Rows[i]["Amount"].ToString(),
-                    Location = new Point(160, 25),
+                    Location = new Point(180, 25),
                     ForeColor = Color.DeepSkyBlue,
                     AutoSize = true,
                     Font = new Font(this.Font.FontFamily, 9.5f, FontStyle.Regular),
@@ -228,7 +228,7 @@ namespace DatabaseProject
                 Label labelBranch = new Label()
                 {
                     Text = "Branch: " + dtLoans.Rows[i]["BranchNumber"].ToString(),
-                    Location = new Point(80, 25),
+                    Location = new Point(180, 1),
                     ForeColor = Color.DeepSkyBlue,
                     AutoSize = true,
                     Font = new Font(this.Font.FontFamily, 9.5f, FontStyle.Regular),
@@ -236,7 +236,7 @@ namespace DatabaseProject
                 Label labelLoan = new Label()
                 {
                     Text = "Loan: " + dtLoans.Rows[i]["LoanNumber"].ToString(),
-                    Location = new Point(160, 1),
+                    Location = new Point(80, 25),
                     ForeColor = Color.DeepSkyBlue,
                     AutoSize = true,
                     Font = new Font(this.Font.FontFamily, 9.5f, FontStyle.Regular),
@@ -244,7 +244,7 @@ namespace DatabaseProject
                 Label labelAmount = new Label()
                 {
                     Text = "Amount: " + dtLoans.Rows[i]["Amount"].ToString(),
-                    Location = new Point(160, 25),
+                    Location = new Point(180, 25),
                     ForeColor = Color.DeepSkyBlue,
                     AutoSize = true,
                     Font = new Font(this.Font.FontFamily, 9.5f, FontStyle.Regular),

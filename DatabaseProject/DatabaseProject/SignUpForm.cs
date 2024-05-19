@@ -65,8 +65,17 @@ namespace DatabaseProject
             if (HomePage.user.Type == "Admin") { cmd.Parameters.AddWithValue("@Admin", "True"); }
             else { cmd.Parameters.AddWithValue("@Admin", "False"); }
 
-            int row = dbAccess.executeQuery(cmd);
-            if (row == 1)
+            int changes;
+            try
+            {
+                changes = dbAccess.executeQuery(cmd);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Some data is missing/invalid");
+                return;
+            }
+            if (changes == 1)
             {
                 HomePage.user.SSN = SSN;
                 HomePage.user.Phone = Phone;

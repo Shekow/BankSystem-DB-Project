@@ -67,19 +67,19 @@
             // 
             this.txtSSN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSSN.Location = new System.Drawing.Point(192, 300);
+            this.txtSSN.Location = new System.Drawing.Point(257, 300);
             this.txtSSN.Name = "txtSSN";
-            this.txtSSN.Size = new System.Drawing.Size(337, 34);
+            this.txtSSN.Size = new System.Drawing.Size(272, 34);
             this.txtSSN.TabIndex = 13;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(128, 453);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(401, 55);
+            this.button1.Size = new System.Drawing.Size(401, 45);
             this.button1.TabIndex = 23;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;

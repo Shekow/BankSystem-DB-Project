@@ -176,9 +176,9 @@
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(363, 160);
+            this.txtFirstName.Location = new System.Drawing.Point(390, 160);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(374, 34);
+            this.txtFirstName.Size = new System.Drawing.Size(347, 34);
             this.txtFirstName.TabIndex = 12;
             // 
             // txtMiddleName
@@ -192,25 +192,25 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(360, 286);
+            this.txtLastName.Location = new System.Drawing.Point(390, 286);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(377, 34);
+            this.txtLastName.Size = new System.Drawing.Size(347, 34);
             this.txtLastName.TabIndex = 14;
             // 
             // txtSSN
             // 
             this.txtSSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSSN.Location = new System.Drawing.Point(295, 348);
+            this.txtSSN.Location = new System.Drawing.Point(390, 348);
             this.txtSSN.Name = "txtSSN";
-            this.txtSSN.Size = new System.Drawing.Size(442, 34);
+            this.txtSSN.Size = new System.Drawing.Size(347, 34);
             this.txtSSN.TabIndex = 15;
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(366, 465);
+            this.txtPassword.Location = new System.Drawing.Point(390, 465);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(371, 34);
+            this.txtPassword.Size = new System.Drawing.Size(347, 34);
             this.txtPassword.TabIndex = 16;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
@@ -226,9 +226,9 @@
             // txtStreet
             // 
             this.txtStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStreet.Location = new System.Drawing.Point(309, 588);
+            this.txtStreet.Location = new System.Drawing.Point(327, 588);
             this.txtStreet.Name = "txtStreet";
-            this.txtStreet.Size = new System.Drawing.Size(196, 34);
+            this.txtStreet.Size = new System.Drawing.Size(178, 34);
             this.txtStreet.TabIndex = 18;
             this.txtStreet.TextChanged += new System.EventHandler(this.txtStreet_TextChanged);
             // 
@@ -252,7 +252,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(238, 654);
             this.button1.Name = "button1";
@@ -318,9 +318,9 @@
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(309, 406);
+            this.txtPhone.Location = new System.Drawing.Point(390, 406);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(428, 34);
+            this.txtPhone.Size = new System.Drawing.Size(347, 34);
             this.txtPhone.TabIndex = 31;
             // 
             // SignUpForm
