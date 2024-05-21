@@ -45,7 +45,8 @@ namespace DatabaseProject
         {
             String query = "SELECT [Bank].[Code], [Bank].[Name], COUNT([Account].[Number]) AS [Total Accounts] FROM [Bank] " +
                 "JOIN [Account] ON [Account].[BankCode] = [Bank].[Code]" +
-                "GROUP BY [Bank].[Code], [Bank].[Name]";
+                "GROUP BY [Bank].[Code], [Bank].[Name]" +
+                "ORDER BY COUNT([Account].[Number]) DESC";
             LoadDataGrid(query);
         }
 

@@ -15,7 +15,7 @@ namespace DatabaseProject
     public partial class CustomerForm : Form
     {
         DBAccess dbAccess = new DBAccess();
-        public EmployeeHomePage homePage = new EmployeeHomePage();
+        public EmployeeHP homePage = new EmployeeHP();
         public CustomerForm()
         {
             InitializeComponent();

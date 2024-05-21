@@ -39,6 +39,7 @@ namespace DatabaseProject
         {
             UserNameLabel.Text = HomePage.user.FirstName;
             this.LoadAccounts();
+            deleteButton.Visible = false;
         }
 
         public void LoadAccounts()
@@ -83,6 +84,7 @@ namespace DatabaseProject
                 AccountTypeLabel.Text = account.Type.ToString();
 
                 this.LoadPendingBalanace();
+                deleteButton.Visible = true;
 
                 comboLoanType.Text = "";
                 comboLoanNumber.Text = "";
@@ -163,6 +165,29 @@ namespace DatabaseProject
             HomePage homePage = new HomePage();
             this.Hide();
             homePage.Show();
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", $"Delete account {account.Number}", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result != DialogResult.Yes)
+                return;
+            String query = $"DELETE FROM [Account] WHERE [Number] = '{account.Number}'"; ;
+
+            SqlCommand cmd = new SqlCommand(query);
+            int changes = dbAccess.executeQuery(cmd);
+            if (changes == 1)
+            {
+                MessageBox.Show("Account deleted successfully");
+                account = new Account();
+                CustomerHomePage homePage = new CustomerHomePage();
+                this.Hide();
+                homePage.Show();
+            }
+            else
+            {
+                MessageBox.Show("Error: something went wrong");
+            }
         }
     }
 }

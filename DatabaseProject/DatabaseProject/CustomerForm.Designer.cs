@@ -30,7 +30,6 @@
         {
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -52,6 +51,7 @@
             this.Country = new System.Windows.Forms.Label();
             this.BuildingNumber = new System.Windows.Forms.Label();
             this.Street = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,16 +74,6 @@
             this.label2.TabIndex = 55;
             this.label2.Text = "Phone";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::DatabaseProject.Properties.Resources.cipher;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 109);
-            this.pictureBox1.TabIndex = 54;
-            this.pictureBox1.TabStop = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -96,11 +86,11 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(332, 672);
+            this.button1.Location = new System.Drawing.Point(318, 662);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(273, 53);
+            this.button1.Size = new System.Drawing.Size(286, 49);
             this.button1.TabIndex = 51;
             this.button1.Text = "Add Customer";
             this.button1.UseVisualStyleBackColor = false;
@@ -287,6 +277,16 @@
             this.Street.Size = new System.Drawing.Size(77, 29);
             this.Street.TabIndex = 57;
             this.Street.Text = "Street";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::DatabaseProject.Properties.Resources.cipher;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(188, 109);
+            this.pictureBox1.TabIndex = 54;
+            this.pictureBox1.TabStop = false;
             // 
             // CustomerForm
             // 

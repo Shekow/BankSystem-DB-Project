@@ -56,6 +56,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.deleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -122,9 +123,8 @@
             this.AccountBalanceLabel.ForeColor = System.Drawing.Color.Lime;
             this.AccountBalanceLabel.Location = new System.Drawing.Point(512, 320);
             this.AccountBalanceLabel.Name = "AccountBalanceLabel";
-            this.AccountBalanceLabel.Size = new System.Drawing.Size(45, 29);
+            this.AccountBalanceLabel.Size = new System.Drawing.Size(0, 29);
             this.AccountBalanceLabel.TabIndex = 5;
-            this.AccountBalanceLabel.Text = "0.0";
             // 
             // label4
             // 
@@ -144,9 +144,8 @@
             this.AccountBankCodeLabel.ForeColor = System.Drawing.Color.RoyalBlue;
             this.AccountBankCodeLabel.Location = new System.Drawing.Point(353, 199);
             this.AccountBankCodeLabel.Name = "AccountBankCodeLabel";
-            this.AccountBankCodeLabel.Size = new System.Drawing.Size(97, 29);
+            this.AccountBankCodeLabel.Size = new System.Drawing.Size(0, 29);
             this.AccountBankCodeLabel.TabIndex = 7;
-            this.AccountBankCodeLabel.Text = "BNKCD";
             // 
             // label5
             // 
@@ -166,16 +165,15 @@
             this.AccountBranchNumberLabel.ForeColor = System.Drawing.Color.RoyalBlue;
             this.AccountBranchNumberLabel.Location = new System.Drawing.Point(662, 199);
             this.AccountBranchNumberLabel.Name = "AccountBranchNumberLabel";
-            this.AccountBranchNumberLabel.Size = new System.Drawing.Size(52, 29);
+            this.AccountBranchNumberLabel.Size = new System.Drawing.Size(0, 29);
             this.AccountBranchNumberLabel.TabIndex = 9;
-            this.AccountBranchNumberLabel.Text = "123";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe Print", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(246, 451);
+            this.label6.Location = new System.Drawing.Point(257, 472);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(225, 54);
             this.label6.TabIndex = 10;
@@ -186,7 +184,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(250, 533);
+            this.label7.Location = new System.Drawing.Point(261, 554);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(127, 29);
             this.label7.TabIndex = 11;
@@ -196,7 +194,7 @@
             // 
             this.comboLoanType.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboLoanType.FormattingEnabled = true;
-            this.comboLoanType.Location = new System.Drawing.Point(396, 530);
+            this.comboLoanType.Location = new System.Drawing.Point(407, 551);
             this.comboLoanType.Name = "comboLoanType";
             this.comboLoanType.Size = new System.Drawing.Size(126, 37);
             this.comboLoanType.TabIndex = 12;
@@ -207,7 +205,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(540, 535);
+            this.label8.Location = new System.Drawing.Point(539, 556);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(165, 29);
             this.label8.TabIndex = 13;
@@ -216,7 +214,7 @@
             // txtAmount
             // 
             this.txtAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmount.Location = new System.Drawing.Point(396, 607);
+            this.txtAmount.Location = new System.Drawing.Point(407, 628);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(126, 34);
             this.txtAmount.TabIndex = 15;
@@ -226,7 +224,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(249, 609);
+            this.label9.Location = new System.Drawing.Point(260, 630);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(120, 32);
             this.label9.TabIndex = 16;
@@ -236,7 +234,7 @@
             // 
             this.RequestLoanButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.RequestLoanButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RequestLoanButton.Location = new System.Drawing.Point(698, 657);
+            this.RequestLoanButton.Location = new System.Drawing.Point(722, 669);
             this.RequestLoanButton.Name = "RequestLoanButton";
             this.RequestLoanButton.Size = new System.Drawing.Size(112, 45);
             this.RequestLoanButton.TabIndex = 17;
@@ -262,17 +260,16 @@
             this.AccountTypeLabel.ForeColor = System.Drawing.Color.RoyalBlue;
             this.AccountTypeLabel.Location = new System.Drawing.Point(448, 262);
             this.AccountTypeLabel.Name = "AccountTypeLabel";
-            this.AccountTypeLabel.Size = new System.Drawing.Size(109, 29);
+            this.AccountTypeLabel.Size = new System.Drawing.Size(0, 29);
             this.AccountTypeLabel.TabIndex = 19;
-            this.AccountTypeLabel.Text = "Personal";
             // 
             // AddAccountButton
             // 
             this.AddAccountButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.AddAccountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddAccountButton.Location = new System.Drawing.Point(708, 116);
+            this.AddAccountButton.Location = new System.Drawing.Point(722, 116);
             this.AddAccountButton.Name = "AddAccountButton";
-            this.AddAccountButton.Size = new System.Drawing.Size(83, 37);
+            this.AddAccountButton.Size = new System.Drawing.Size(112, 37);
             this.AddAccountButton.TabIndex = 20;
             this.AddAccountButton.Text = "Add";
             this.AddAccountButton.UseVisualStyleBackColor = false;
@@ -282,9 +279,9 @@
             // 
             this.comboLoanNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboLoanNumber.FormattingEnabled = true;
-            this.comboLoanNumber.Location = new System.Drawing.Point(711, 532);
+            this.comboLoanNumber.Location = new System.Drawing.Point(722, 553);
             this.comboLoanNumber.Name = "comboLoanNumber";
-            this.comboLoanNumber.Size = new System.Drawing.Size(99, 37);
+            this.comboLoanNumber.Size = new System.Drawing.Size(112, 37);
             this.comboLoanNumber.TabIndex = 21;
             this.comboLoanNumber.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -306,9 +303,8 @@
             this.AccountPendingBalanceLabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.AccountPendingBalanceLabel.Location = new System.Drawing.Point(512, 379);
             this.AccountPendingBalanceLabel.Name = "AccountPendingBalanceLabel";
-            this.AccountPendingBalanceLabel.Size = new System.Drawing.Size(45, 29);
+            this.AccountPendingBalanceLabel.Size = new System.Drawing.Size(0, 29);
             this.AccountPendingBalanceLabel.TabIndex = 23;
-            this.AccountPendingBalanceLabel.Text = "0.0";
             // 
             // label12
             // 
@@ -348,18 +344,31 @@
             // 
             this.pictureBox2.BackgroundImage = global::DatabaseProject.Properties.Resources.loan1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(477, 451);
+            this.pictureBox2.Location = new System.Drawing.Point(488, 472);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(103, 58);
             this.pictureBox2.TabIndex = 91;
             this.pictureBox2.TabStop = false;
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.BackColor = System.Drawing.Color.Crimson;
+            this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteButton.Location = new System.Drawing.Point(657, 423);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(177, 46);
+            this.deleteButton.TabIndex = 92;
+            this.deleteButton.Text = "Delete Account";
+            this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // CustomerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(961, 724);
+            this.ClientSize = new System.Drawing.Size(937, 741);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -428,5 +437,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button deleteButton;
     }
 }

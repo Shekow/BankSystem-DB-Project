@@ -76,12 +76,12 @@ namespace DatabaseProject
                 }
                 else if (HomePage.user.Type == "Employee")
                 {
-                    EmployeeHomePage emplyeeHomePage = new EmployeeHomePage();
+                    EmployeeHP emplyeeHomePage = new EmployeeHP();
                     emplyeeHomePage.Show();
                 }
                 else
                 {
-                    AdminHomePage adminHomePage = new AdminHomePage();
+                    AdminHP adminHomePage = new AdminHP();
                     adminHomePage.Show();
                 }
             }

@@ -53,11 +53,11 @@
     <Compile Include="AccountForm.Designer.cs">
       <DependentUpon>AccountForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminHomePage.cs">
+    <Compile Include="AdminHP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminHomePage.Designer.cs">
-      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    <Compile Include="AdminHP.Designer.cs">
+      <DependentUpon>AdminHP.cs</DependentUpon>
     </Compile>
     <Compile Include="BankBranchForm.cs">
       <SubType>Form</SubType>
@@ -84,11 +84,11 @@
       <DependentUpon>CustomerHomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="DBAccess.cs" />
-    <Compile Include="EmployeeHomePage.cs">
+    <Compile Include="EmployeeHP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeHomePage.Designer.cs">
-      <DependentUpon>EmployeeHomePage.cs</DependentUpon>
+    <Compile Include="EmployeeHP.Designer.cs">
+      <DependentUpon>EmployeeHP.cs</DependentUpon>
     </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
@@ -132,8 +132,8 @@
     <EmbeddedResource Include="AccountForm.resx">
       <DependentUpon>AccountForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminHomePage.resx">
-      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    <EmbeddedResource Include="AdminHP.resx">
+      <DependentUpon>AdminHP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BankBranchForm.resx">
       <DependentUpon>BankBranchForm.cs</DependentUpon>
@@ -147,8 +147,8 @@
     <EmbeddedResource Include="CustomerHomePage.resx">
       <DependentUpon>CustomerHomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeHomePage.resx">
-      <DependentUpon>EmployeeHomePage.cs</DependentUpon>
+    <EmbeddedResource Include="EmployeeHP.resx">
+      <DependentUpon>EmployeeHP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>

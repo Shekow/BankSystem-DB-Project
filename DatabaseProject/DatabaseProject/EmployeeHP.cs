@@ -1,6 +1,5 @@
 ﻿using DatabaseProject.DatabaseProject;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +12,10 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class EmployeeHomePage : Form
+    public partial class EmployeeHP : Form
     {
         DBAccess dbAccess = new DBAccess();
-        public EmployeeHomePage()
+        public EmployeeHP()
         {
             InitializeComponent();
         }
@@ -25,27 +24,7 @@ namespace DatabaseProject
             String query = "SELECT * FROM [Customer]";
             DataTable dtLogs = new DataTable();
             dbAccess.readDatathroughAdapter(query, dtLogs);
-            dataGridCustomers.DataSource = dtLogs;
-        }
-        private void EmployeeHomePage_Load(object sender, EventArgs e)
-        {
-            UserNameLabel.Text = HomePage.user.FirstName;
-            this.LoadCustomers();
-            this.LoadPending();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CustomerForm customerForm = new CustomerForm();
-            customerForm.Show();
-            customerForm.homePage = this;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            UpdateUserForm updateUserForm = new UpdateUserForm();
-            this.Hide();
-            updateUserForm.Show();
+            dataGridCustomersList.DataSource = dtLogs;
         }
         void LoadPending()
         {
@@ -283,7 +262,7 @@ namespace DatabaseProject
                     }
                     LoadInProgress();
                 };
-                
+
                 panel.Controls.Add(labelAccount);
                 panel.Controls.Add(labelBank);
                 panel.Controls.Add(labelBranch);
@@ -293,19 +272,19 @@ namespace DatabaseProject
                 FlowPanel.Controls.Add(panel);
             }
         }
-        private void button2_Click(object sender, EventArgs e)
+
+        private void EmployeeHP_Load(object sender, EventArgs e)
         {
-            LoadPending();
+            UserNameLabel.Text = HomePage.user.FirstName;
+            this.LoadCustomers();
+            this.LoadPending();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            LoadInProgress();
+            UpdateUserForm updateUserForm = new UpdateUserForm();
+            this.Hide();
+            updateUserForm.Show();
         }
 
         private void label13_Click(object sender, EventArgs e)
@@ -313,6 +292,23 @@ namespace DatabaseProject
             HomePage homePage = new HomePage();
             this.Hide();
             homePage.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CustomerForm customerForm = new CustomerForm();
+            customerForm.Show();
+            customerForm.homePage = this;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LoadPending();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            LoadInProgress();
         }
     }
 }

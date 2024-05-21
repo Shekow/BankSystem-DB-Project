@@ -42,7 +42,7 @@ namespace DatabaseProject
                 int changes = dbAccess.executeQuery(cmd);
                 if (changes == 1)
                 {
-                    MessageBox.Show("Account created successfully");
+                    MessageBox.Show("Bank Added successfully");
                     this.Hide();
                 }
                 else
